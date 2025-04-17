@@ -33,6 +33,6 @@ namespace DataAccessLayer.EntityClass
         public DateTime? NgayTT { get; set; }
 
         public virtual KhachHang KhachHang { get; set; }
-        public virtual ICollection<LapHoaDon> LapHoaDons { get; set; }
+        public virtual LapHoaDon LapHoaDons { get; set; }
     }
 }

@@ -20,6 +20,6 @@ namespace DataAccessLayer.EntityClass
         [Range(0, double.MaxValue, ErrorMessage = "Giá dịch vụ phải >= 0")]
         public decimal GiaDV { get; set; }
         public virtual ICollection<SuDungDichVu> SuDungDichVus { get; set; }
-        public virtual ICollection<ThuocLoaiDV> ThuocLoaiDVs { get; set; }
+        public virtual ThuocLoaiDV ThuocLoaiDVs { get; set; }
     }
 }
