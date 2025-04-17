@@ -3,13 +3,13 @@
   "WorkspaceRootPath": "D:\\GitHub\\Win_QuanLyKhachSan\\QuanLyKhachSan\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4C63A148-B796-4F3F-B626-650336C2CE23}|..\\BusinessAccessLayer\\BusinessAccessLayer.csproj|d:\\github\\win_quanlykhachsan\\businessaccesslayer\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C4956554-2FF9-4360-ADE7-FBEB3CABB09B}|..\\DataAccessLayer\\DataAccessLayer.csproj|d:\\github\\win_quanlykhachsan\\dataaccesslayer\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{C4956554-2FF9-4360-ADE7-FBEB3CABB09B}|..\\DataAccessLayer\\DataAccessLayer.csproj|d:\\github\\win_quanlykhachsan\\dataaccesslayer\\entityclass\\hoadon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4956554-2FF9-4360-ADE7-FBEB3CABB09B}|..\\DataAccessLayer\\DataAccessLayer.csproj|d:\\github\\win_quanlykhachsan\\dataaccesslayer\\entityclass\\phong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4956554-2FF9-4360-ADE7-FBEB3CABB09B}|..\\DataAccessLayer\\DataAccessLayer.csproj|d:\\github\\win_quanlykhachsan\\dataaccesslayer\\entityclass\\quanly.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C4956554-2FF9-4360-ADE7-FBEB3CABB09B}|..\\DataAccessLayer\\DataAccessLayer.csproj|d:\\github\\win_quanlykhachsan\\dataaccesslayer\\entityclass\\sudungdichvu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -18,10 +18,25 @@
       "AbsoluteMoniker": "D:0:0:{C4956554-2FF9-4360-ADE7-FBEB3CABB09B}|..\\DataAccessLayer\\DataAccessLayer.csproj|d:\\github\\win_quanlykhachsan\\dataaccesslayer\\entityclass\\thuocloaidv.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C4956554-2FF9-4360-ADE7-FBEB3CABB09B}|..\\DataAccessLayer\\DataAccessLayer.csproj|d:\\github\\win_quanlykhachsan\\dataaccesslayer\\entityclass\\dichvu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C4956554-2FF9-4360-ADE7-FBEB3CABB09B}|..\\DataAccessLayer\\DataAccessLayer.csproj|d:\\github\\win_quanlykhachsan\\dataaccesslayer\\entityclass\\loaidv.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C4956554-2FF9-4360-ADE7-FBEB3CABB09B}|..\\DataAccessLayer\\DataAccessLayer.csproj|d:\\github\\win_quanlykhachsan\\dataaccesslayer\\entityclass\\loaidv.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C4956554-2FF9-4360-ADE7-FBEB3CABB09B}|..\\DataAccessLayer\\DataAccessLayer.csproj|d:\\github\\win_quanlykhachsan\\dataaccesslayer\\hotelcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4956554-2FF9-4360-ADE7-FBEB3CABB09B}|..\\DataAccessLayer\\DataAccessLayer.csproj|d:\\github\\win_quanlykhachsan\\dataaccesslayer\\entityclass\\khachhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4956554-2FF9-4360-ADE7-FBEB3CABB09B}|..\\DataAccessLayer\\DataAccessLayer.csproj|d:\\github\\win_quanlykhachsan\\dataaccesslayer\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C63A148-B796-4F3F-B626-650336C2CE23}|..\\BusinessAccessLayer\\BusinessAccessLayer.csproj|d:\\github\\win_quanlykhachsan\\businessaccesslayer\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C63A148-B796-4F3F-B626-650336C2CE23}|..\\BusinessAccessLayer\\BusinessAccessLayer.csproj|d:\\github\\win_quanlykhachsan\\businessaccesslayer\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4956554-2FF9-4360-ADE7-FBEB3CABB09B}|..\\DataAccessLayer\\DataAccessLayer.csproj|d:\\github\\win_quanlykhachsan\\dataaccesslayer\\entityclass\\dichvu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C4956554-2FF9-4360-ADE7-FBEB3CABB09B}|..\\DataAccessLayer\\DataAccessLayer.csproj|d:\\github\\win_quanlykhachsan\\dataaccesslayer\\entityclass\\datphong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -39,13 +54,7 @@
       "RelativeMoniker": "D:0:0:{33C93078-602C-49BB-A725-0AA888E650AC}|QuanLyKhachSan.csproj|solutionrelative:fxacnhangmail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C4956554-2FF9-4360-ADE7-FBEB3CABB09B}|..\\DataAccessLayer\\DataAccessLayer.csproj|d:\\github\\win_quanlykhachsan\\dataaccesslayer\\entityclass\\khachhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C4956554-2FF9-4360-ADE7-FBEB3CABB09B}|..\\DataAccessLayer\\DataAccessLayer.csproj|d:\\github\\win_quanlykhachsan\\dataaccesslayer\\entityclass\\phong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{33C93078-602C-49BB-A725-0AA888E650AC}|QuanLyKhachSan.csproj|d:\\github\\win_quanlykhachsan\\quanlykhachsan\\ftablemanage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{33C93078-602C-49BB-A725-0AA888E650AC}|QuanLyKhachSan.csproj|D:\\GitHub\\Win_QuanLyKhachSan\\QuanLyKhachSan\\ftablemanage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{33C93078-602C-49BB-A725-0AA888E650AC}|QuanLyKhachSan.csproj|solutionrelative:ftablemanage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -190,7 +199,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -202,7 +211,45 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
+              "Title": "QuanLy.cs",
+              "DocumentMoniker": "D:\\GitHub\\Win_QuanLyKhachSan\\DataAccessLayer\\EntityClass\\QuanLy.cs",
+              "RelativeDocumentMoniker": "..\\DataAccessLayer\\EntityClass\\QuanLy.cs",
+              "ToolTip": "D:\\GitHub\\Win_QuanLyKhachSan\\DataAccessLayer\\EntityClass\\QuanLy.cs",
+              "RelativeToolTip": "..\\DataAccessLayer\\EntityClass\\QuanLy.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-17T03:16:43.82Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "HotelContext.cs",
+              "DocumentMoniker": "D:\\GitHub\\Win_QuanLyKhachSan\\DataAccessLayer\\HotelContext.cs",
+              "RelativeDocumentMoniker": "..\\DataAccessLayer\\HotelContext.cs",
+              "ToolTip": "D:\\GitHub\\Win_QuanLyKhachSan\\DataAccessLayer\\HotelContext.cs",
+              "RelativeToolTip": "..\\DataAccessLayer\\HotelContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-17T03:10:46.005Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "App.config",
+              "DocumentMoniker": "D:\\GitHub\\Win_QuanLyKhachSan\\BusinessAccessLayer\\App.config",
+              "RelativeDocumentMoniker": "..\\BusinessAccessLayer\\App.config",
+              "ToolTip": "D:\\GitHub\\Win_QuanLyKhachSan\\BusinessAccessLayer\\App.config",
+              "RelativeToolTip": "..\\BusinessAccessLayer\\App.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-04-17T02:55:59.727Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "Class1.cs",
               "DocumentMoniker": "D:\\GitHub\\Win_QuanLyKhachSan\\BusinessAccessLayer\\Class1.cs",
               "RelativeDocumentMoniker": "..\\BusinessAccessLayer\\Class1.cs",
@@ -210,44 +257,42 @@
               "RelativeToolTip": "..\\BusinessAccessLayer\\Class1.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-17T02:55:32.414Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-17T02:55:32.414Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 8,
               "Title": "App.config",
               "DocumentMoniker": "D:\\GitHub\\Win_QuanLyKhachSan\\DataAccessLayer\\App.config",
               "RelativeDocumentMoniker": "..\\DataAccessLayer\\App.config",
               "ToolTip": "D:\\GitHub\\Win_QuanLyKhachSan\\DataAccessLayer\\App.config",
               "RelativeToolTip": "..\\DataAccessLayer\\App.config",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAQAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAABKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2025-04-17T02:54:36.469Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-17T02:54:36.469Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "HoaDon.cs",
               "DocumentMoniker": "D:\\GitHub\\Win_QuanLyKhachSan\\DataAccessLayer\\EntityClass\\HoaDon.cs",
               "RelativeDocumentMoniker": "..\\DataAccessLayer\\EntityClass\\HoaDon.cs",
               "ToolTip": "D:\\GitHub\\Win_QuanLyKhachSan\\DataAccessLayer\\EntityClass\\HoaDon.cs",
               "RelativeToolTip": "..\\DataAccessLayer\\EntityClass\\HoaDon.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAA1wAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABQAAAAAAAAAAAAgwCYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-17T02:54:04.709Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 5,
               "Title": "LoaiDV.cs",
               "DocumentMoniker": "D:\\GitHub\\Win_QuanLyKhachSan\\DataAccessLayer\\EntityClass\\LoaiDV.cs",
               "RelativeDocumentMoniker": "..\\DataAccessLayer\\EntityClass\\LoaiDV.cs",
               "ToolTip": "D:\\GitHub\\Win_QuanLyKhachSan\\DataAccessLayer\\EntityClass\\LoaiDV.cs",
               "RelativeToolTip": "..\\DataAccessLayer\\EntityClass\\LoaiDV.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAA8AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-17T02:51:23.257Z",
               "EditorCaption": ""
@@ -260,36 +305,34 @@
               "RelativeDocumentMoniker": "..\\DataAccessLayer\\EntityClass\\ThuocLoaiDV.cs",
               "ToolTip": "D:\\GitHub\\Win_QuanLyKhachSan\\DataAccessLayer\\EntityClass\\ThuocLoaiDV.cs",
               "RelativeToolTip": "..\\DataAccessLayer\\EntityClass\\ThuocLoaiDV.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAeAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABEAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-17T02:49:46.111Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 11,
               "Title": "DichVu.cs",
               "DocumentMoniker": "D:\\GitHub\\Win_QuanLyKhachSan\\DataAccessLayer\\EntityClass\\DichVu.cs",
               "RelativeDocumentMoniker": "..\\DataAccessLayer\\EntityClass\\DichVu.cs",
-              "ToolTip": "D:\\GitHub\\Win_QuanLyKhachSan\\DataAccessLayer\\EntityClass\\DichVu.cs*",
-              "RelativeToolTip": "..\\DataAccessLayer\\EntityClass\\DichVu.cs*",
+              "ToolTip": "D:\\GitHub\\Win_QuanLyKhachSan\\DataAccessLayer\\EntityClass\\DichVu.cs",
+              "RelativeToolTip": "..\\DataAccessLayer\\EntityClass\\DichVu.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAABgAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-17T02:48:57.159Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-17T02:48:57.159Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 7,
               "Title": "KhachHang.cs",
               "DocumentMoniker": "D:\\GitHub\\Win_QuanLyKhachSan\\DataAccessLayer\\EntityClass\\KhachHang.cs",
               "RelativeDocumentMoniker": "..\\DataAccessLayer\\EntityClass\\KhachHang.cs",
               "ToolTip": "D:\\GitHub\\Win_QuanLyKhachSan\\DataAccessLayer\\EntityClass\\KhachHang.cs",
               "RelativeToolTip": "..\\DataAccessLayer\\EntityClass\\KhachHang.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAmwBUAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAQwB8AAABMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-17T02:17:15.179Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-17T02:17:15.179Z"
             },
             {
               "$type": "Document",
@@ -299,14 +342,14 @@
               "RelativeDocumentMoniker": "..\\DataAccessLayer\\EntityClass\\SuDungDichVu.cs",
               "ToolTip": "D:\\GitHub\\Win_QuanLyKhachSan\\DataAccessLayer\\EntityClass\\SuDungDichVu.cs",
               "RelativeToolTip": "..\\DataAccessLayer\\EntityClass\\SuDungDichVu.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-17T02:17:04.965Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 1,
               "Title": "Phong.cs",
               "DocumentMoniker": "D:\\GitHub\\Win_QuanLyKhachSan\\DataAccessLayer\\EntityClass\\Phong.cs",
               "RelativeDocumentMoniker": "..\\DataAccessLayer\\EntityClass\\Phong.cs",
@@ -319,7 +362,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 12,
               "Title": "DatPhong.cs",
               "DocumentMoniker": "D:\\GitHub\\Win_QuanLyKhachSan\\DataAccessLayer\\EntityClass\\DatPhong.cs",
               "RelativeDocumentMoniker": "..\\DataAccessLayer\\EntityClass\\DatPhong.cs",
@@ -327,12 +370,11 @@
               "RelativeToolTip": "..\\DataAccessLayer\\EntityClass\\DatPhong.cs",
               "ViewState": "AgIAAAoAAAAAAAAAAAAmwBUAAABAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-17T02:14:16.378Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-17T02:14:16.378Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
+              "DocumentIndex": 50,
               "Title": "App.config",
               "DocumentMoniker": "D:\\GitHub\\QuanLyKhachSan_Win\\DataAccessLayer\\App.config",
               "RelativeDocumentMoniker": "..\\..\\QuanLyKhachSan_Win\\DataAccessLayer\\App.config",
@@ -344,7 +386,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 48,
+              "DocumentIndex": 51,
               "Title": "User.cs",
               "DocumentMoniker": "D:\\GitHub\\QuanLyKhachSan_Win\\DataAccessLayer\\EntityClass\\User.cs",
               "RelativeDocumentMoniker": "..\\..\\QuanLyKhachSan_Win\\DataAccessLayer\\EntityClass\\User.cs",
@@ -356,7 +398,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 49,
+              "DocumentIndex": 52,
               "Title": "DichVu.cs",
               "DocumentMoniker": "D:\\GitHub\\QuanLyKhachSan_Win\\DataAccessLayer\\EntityClass\\DichVu.cs",
               "RelativeDocumentMoniker": "..\\..\\QuanLyKhachSan_Win\\DataAccessLayer\\EntityClass\\DichVu.cs",
@@ -368,7 +410,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 23,
               "Title": "fXacNhanOTP.Designer.cs",
               "DocumentMoniker": "D:\\GitHub\\Win_QuanLyKhachSan\\QuanLyKhachSan\\fXacNhanOTP.Designer.cs",
               "RelativeDocumentMoniker": "fXacNhanOTP.Designer.cs",
@@ -380,7 +422,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 24,
               "Title": "fXacNhanOTP.cs [Design]",
               "DocumentMoniker": "D:\\GitHub\\Win_QuanLyKhachSan\\QuanLyKhachSan\\fXacNhanOTP.cs",
               "RelativeDocumentMoniker": "fXacNhanOTP.cs",
@@ -391,7 +433,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 25,
               "Title": "fXacNhanMatKhau.Designer.cs",
               "DocumentMoniker": "D:\\GitHub\\Win_QuanLyKhachSan\\QuanLyKhachSan\\fXacNhanMatKhau.Designer.cs",
               "RelativeDocumentMoniker": "fXacNhanMatKhau.Designer.cs",
@@ -403,7 +445,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 26,
               "Title": "packages.config",
               "DocumentMoniker": "D:\\GitHub\\Win_QuanLyKhachSan\\QuanLyKhachSan\\packages.config",
               "RelativeDocumentMoniker": "packages.config",
@@ -415,7 +457,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 22,
               "Title": "fXacNhanMatKhau.cs [Design]",
               "DocumentMoniker": "D:\\GitHub\\Win_QuanLyKhachSan\\QuanLyKhachSan\\fXacNhanMatKhau.cs",
               "RelativeDocumentMoniker": "fXacNhanMatKhau.cs",
@@ -426,7 +468,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 27,
               "Title": "fXacNhanGmail.Designer.cs",
               "DocumentMoniker": "D:\\GitHub\\Win_QuanLyKhachSan\\QuanLyKhachSan\\fXacNhanGmail.Designer.cs",
               "RelativeDocumentMoniker": "fXacNhanGmail.Designer.cs",
@@ -434,24 +476,22 @@
               "RelativeToolTip": "fXacNhanGmail.Designer.cs",
               "ViewState": "AgIAAE4AAAAAAAAAAAAewFcAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-16T17:08:18.607Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-16T17:08:18.607Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 15,
               "Title": "fXacNhanGmail.cs [Design]",
               "DocumentMoniker": "D:\\GitHub\\Win_QuanLyKhachSan\\QuanLyKhachSan\\fXacNhanGmail.cs",
               "RelativeDocumentMoniker": "fXacNhanGmail.cs",
               "ToolTip": "D:\\GitHub\\Win_QuanLyKhachSan\\QuanLyKhachSan\\fXacNhanGmail.cs [Design]",
               "RelativeToolTip": "fXacNhanGmail.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-16T17:08:07.875Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-04-16T17:08:07.875Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 28,
               "Title": "fLogin.Designer.cs",
               "DocumentMoniker": "D:\\GitHub\\Win_QuanLyKhachSan\\QuanLyKhachSan\\fLogin.Designer.cs",
               "RelativeDocumentMoniker": "fLogin.Designer.cs",
@@ -459,24 +499,22 @@
               "RelativeToolTip": "fLogin.Designer.cs",
               "ViewState": "AgIAAIoAAAAAAAAAAAAowJMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-16T17:07:07.01Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-16T17:07:07.01Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 14,
               "Title": "fLogin.cs [Design]",
               "DocumentMoniker": "D:\\GitHub\\Win_QuanLyKhachSan\\QuanLyKhachSan\\fLogin.cs",
               "RelativeDocumentMoniker": "fLogin.cs",
               "ToolTip": "D:\\GitHub\\Win_QuanLyKhachSan\\QuanLyKhachSan\\fLogin.cs [Design]",
               "RelativeToolTip": "fLogin.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-16T17:06:54.46Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-04-16T17:06:54.46Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 29,
               "Title": "fHoaDon.Designer.cs",
               "DocumentMoniker": "D:\\GitHub\\Win_QuanLyKhachSan\\QuanLyKhachSan\\fHoaDon.Designer.cs",
               "RelativeDocumentMoniker": "fHoaDon.Designer.cs",
@@ -488,7 +526,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 20,
               "Title": "fHoaDon.cs [Design]",
               "DocumentMoniker": "D:\\GitHub\\Win_QuanLyKhachSan\\QuanLyKhachSan\\fHoaDon.cs",
               "RelativeDocumentMoniker": "fHoaDon.cs",
@@ -499,7 +537,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 31,
               "Title": "fCheckIn.Designer.cs",
               "DocumentMoniker": "D:\\GitHub\\Win_QuanLyKhachSan\\QuanLyKhachSan\\fCheckIn.Designer.cs",
               "RelativeDocumentMoniker": "fCheckIn.Designer.cs",
@@ -511,7 +549,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 30,
               "Title": "fCheckIn.cs [Design]",
               "DocumentMoniker": "D:\\GitHub\\Win_QuanLyKhachSan\\QuanLyKhachSan\\fCheckIn.cs",
               "RelativeDocumentMoniker": "fCheckIn.cs",
@@ -522,7 +560,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 19,
               "Title": "fDichVu.Designer.cs",
               "DocumentMoniker": "D:\\GitHub\\Win_QuanLyKhachSan\\QuanLyKhachSan\\fDichVu.Designer.cs",
               "RelativeDocumentMoniker": "fDichVu.Designer.cs",
@@ -534,7 +572,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 18,
               "Title": "fDichVu.cs [Design]",
               "DocumentMoniker": "D:\\GitHub\\Win_QuanLyKhachSan\\QuanLyKhachSan\\fDichVu.cs",
               "RelativeDocumentMoniker": "fDichVu.cs",
@@ -545,7 +583,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 33,
               "Title": "fPhong.Designer.cs",
               "DocumentMoniker": "D:\\GitHub\\Win_QuanLyKhachSan\\QuanLyKhachSan\\fPhong.Designer.cs",
               "RelativeDocumentMoniker": "fPhong.Designer.cs",
@@ -557,7 +595,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 21,
               "Title": "fPhong.cs [Design]",
               "DocumentMoniker": "D:\\GitHub\\Win_QuanLyKhachSan\\QuanLyKhachSan\\fPhong.cs",
               "RelativeDocumentMoniker": "fPhong.cs",
@@ -568,7 +606,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 34,
               "Title": "fTableManage.Designer.cs",
               "DocumentMoniker": "D:\\GitHub\\Win_QuanLyKhachSan\\QuanLyKhachSan\\fTableManage.Designer.cs",
               "RelativeDocumentMoniker": "fTableManage.Designer.cs",
@@ -576,12 +614,11 @@
               "RelativeToolTip": "fTableManage.Designer.cs",
               "ViewState": "AgIAAM4AAAAAAAAAAAAqwNwAAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-16T16:43:59.221Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-16T16:43:59.221Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 32,
               "Title": "fKhachHang.Designer.cs",
               "DocumentMoniker": "D:\\GitHub\\Win_QuanLyKhachSan\\QuanLyKhachSan\\fKhachHang.Designer.cs",
               "RelativeDocumentMoniker": "fKhachHang.Designer.cs",
@@ -589,24 +626,22 @@
               "RelativeToolTip": "fKhachHang.Designer.cs",
               "ViewState": "AgIAAIIAAAAAAAAAAAASwI8AAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-16T16:22:42.536Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-16T16:22:42.536Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 13,
               "Title": "fKhachHang.cs [Design]",
               "DocumentMoniker": "D:\\GitHub\\Win_QuanLyKhachSan\\QuanLyKhachSan\\fKhachHang.cs",
               "RelativeDocumentMoniker": "fKhachHang.cs",
               "ToolTip": "D:\\GitHub\\Win_QuanLyKhachSan\\QuanLyKhachSan\\fKhachHang.cs [Design]",
               "RelativeToolTip": "fKhachHang.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-16T16:22:32.33Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-04-16T16:22:32.33Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 16,
               "Title": "fTableManage.cs",
               "DocumentMoniker": "D:\\GitHub\\Win_QuanLyKhachSan\\QuanLyKhachSan\\fTableManage.cs",
               "RelativeDocumentMoniker": "fTableManage.cs",
@@ -614,12 +649,11 @@
               "RelativeToolTip": "fTableManage.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-16T16:16:39.052Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-16T16:16:39.052Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 35,
               "Title": "Screenshot 2025-04-11 153758.png - PNG [799x805, 32 bit, PNG]",
               "DocumentMoniker": "D:\\GitHub\\Win_QuanLyKhachSan\\QuanLyKhachSan\\Resources\\Screenshot 2025-04-11 153758.png",
               "RelativeDocumentMoniker": "Resources\\Screenshot 2025-04-11 153758.png",
@@ -630,7 +664,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 50,
+              "DocumentIndex": 53,
               "Title": "Class1.cs",
               "DocumentMoniker": "D:\\GitHub\\QuanLyKhachSan_Win\\BusinessAccessLayer\\Class1.cs",
               "RelativeDocumentMoniker": "..\\..\\QuanLyKhachSan_Win\\BusinessAccessLayer\\Class1.cs",
@@ -642,7 +676,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 51,
+              "DocumentIndex": 54,
               "Title": "HotelContext.cs",
               "DocumentMoniker": "D:\\GitHub\\QuanLyKhachSan_Win\\DataAccessLayer\\HotelContext.cs",
               "RelativeDocumentMoniker": "..\\..\\QuanLyKhachSan_Win\\DataAccessLayer\\HotelContext.cs",
@@ -654,7 +688,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 38,
               "Title": "HoaDon.cs",
               "DocumentMoniker": "D:\\GitHub\\DataAccessLayer\\EntityClass\\HoaDon.cs",
               "RelativeDocumentMoniker": "..\\..\\DataAccessLayer\\EntityClass\\HoaDon.cs",
@@ -665,7 +699,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 39,
               "Title": "DichVu.cs",
               "DocumentMoniker": "D:\\GitHub\\DataAccessLayer\\EntityClass\\DichVu.cs",
               "RelativeDocumentMoniker": "..\\..\\DataAccessLayer\\EntityClass\\DichVu.cs",
@@ -676,7 +710,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 40,
               "Title": "LoaiDV.cs",
               "DocumentMoniker": "D:\\GitHub\\DataAccessLayer\\EntityClass\\LoaiDV.cs",
               "RelativeDocumentMoniker": "..\\..\\DataAccessLayer\\EntityClass\\LoaiDV.cs",
@@ -687,7 +721,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 41,
               "Title": "DatPhong.cs",
               "DocumentMoniker": "D:\\GitHub\\DataAccessLayer\\EntityClass\\DatPhong.cs",
               "RelativeDocumentMoniker": "..\\..\\DataAccessLayer\\EntityClass\\DatPhong.cs",
@@ -698,7 +732,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 36,
               "Title": "NhanVien.cs",
               "DocumentMoniker": "D:\\GitHub\\DataAccessLayer\\EntityClass\\NhanVien.cs",
               "RelativeDocumentMoniker": "..\\..\\DataAccessLayer\\EntityClass\\NhanVien.cs",
@@ -709,7 +743,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 42,
               "Title": "KhachHang.cs",
               "DocumentMoniker": "D:\\GitHub\\DataAccessLayer\\EntityClass\\KhachHang.cs",
               "RelativeDocumentMoniker": "..\\..\\DataAccessLayer\\EntityClass\\KhachHang.cs",
@@ -720,7 +754,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 43,
               "Title": "LapHoaDon.cs",
               "DocumentMoniker": "D:\\GitHub\\DataAccessLayer\\EntityClass\\LapHoaDon.cs",
               "RelativeDocumentMoniker": "..\\..\\DataAccessLayer\\EntityClass\\LapHoaDon.cs",
@@ -731,7 +765,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 44,
               "Title": "Phong.cs",
               "DocumentMoniker": "D:\\GitHub\\DataAccessLayer\\EntityClass\\Phong.cs",
               "RelativeDocumentMoniker": "..\\..\\DataAccessLayer\\EntityClass\\Phong.cs",
@@ -742,7 +776,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 45,
               "Title": "QuanLy.cs",
               "DocumentMoniker": "D:\\GitHub\\DataAccessLayer\\EntityClass\\QuanLy.cs",
               "RelativeDocumentMoniker": "..\\..\\DataAccessLayer\\EntityClass\\QuanLy.cs",
@@ -753,7 +787,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 46,
               "Title": "SuDungDichVu.cs",
               "DocumentMoniker": "D:\\GitHub\\DataAccessLayer\\EntityClass\\SuDungDichVu.cs",
               "RelativeDocumentMoniker": "..\\..\\DataAccessLayer\\EntityClass\\SuDungDichVu.cs",
@@ -764,7 +798,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 47,
               "Title": "ThuocLoaiDV.cs",
               "DocumentMoniker": "D:\\GitHub\\DataAccessLayer\\EntityClass\\ThuocLoaiDV.cs",
               "RelativeDocumentMoniker": "..\\..\\DataAccessLayer\\EntityClass\\ThuocLoaiDV.cs",
@@ -775,7 +809,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 48,
               "Title": "HotelContext.cs",
               "DocumentMoniker": "D:\\GitHub\\DataAccessLayer\\HotelContext.cs",
               "RelativeDocumentMoniker": "..\\..\\DataAccessLayer\\HotelContext.cs",
@@ -786,7 +820,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 49,
               "Title": "User.cs",
               "DocumentMoniker": "D:\\GitHub\\DataAccessLayer\\EntityClass\\User.cs",
               "RelativeDocumentMoniker": "..\\..\\DataAccessLayer\\EntityClass\\User.cs",
@@ -797,7 +831,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 37,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\GitHub\\Win_QuanLyKhachSan\\QuanLyKhachSan\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -809,15 +843,14 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 17,
               "Title": "fTableManage.cs [Design]",
               "DocumentMoniker": "D:\\GitHub\\Win_QuanLyKhachSan\\QuanLyKhachSan\\fTableManage.cs",
               "RelativeDocumentMoniker": "fTableManage.cs",
               "ToolTip": "D:\\GitHub\\Win_QuanLyKhachSan\\QuanLyKhachSan\\fTableManage.cs [Design]",
               "RelativeToolTip": "fTableManage.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-16T13:00:24.573Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-04-16T13:00:24.573Z"
             }
           ]
         }
