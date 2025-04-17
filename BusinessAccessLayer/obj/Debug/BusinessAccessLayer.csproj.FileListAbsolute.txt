@@ -1,0 +1,15 @@
+D:\GitHub\QuanLyKhachSan_Win\BusinessAccessLayer\bin\Debug\BusinessAccessLayer.dll.config
+D:\GitHub\QuanLyKhachSan_Win\BusinessAccessLayer\bin\Debug\BusinessAccessLayer.dll
+D:\GitHub\QuanLyKhachSan_Win\BusinessAccessLayer\bin\Debug\BusinessAccessLayer.pdb
+D:\GitHub\QuanLyKhachSan_Win\BusinessAccessLayer\bin\Debug\EntityFramework.dll
+D:\GitHub\QuanLyKhachSan_Win\BusinessAccessLayer\bin\Debug\EntityFramework.SqlServer.dll
+D:\GitHub\QuanLyKhachSan_Win\BusinessAccessLayer\bin\Debug\EntityFramework.xml
+D:\GitHub\QuanLyKhachSan_Win\BusinessAccessLayer\bin\Debug\EntityFramework.SqlServer.xml
+D:\GitHub\QuanLyKhachSan_Win\BusinessAccessLayer\obj\Debug\BusinessAccessLayer.csproj.AssemblyReference.cache
+D:\GitHub\QuanLyKhachSan_Win\BusinessAccessLayer\obj\Debug\BusinessAccessLayer.csproj.CoreCompileInputs.cache
+D:\GitHub\QuanLyKhachSan_Win\BusinessAccessLayer\obj\Debug\Business.395A7FC9.Up2Date
+D:\GitHub\QuanLyKhachSan_Win\BusinessAccessLayer\obj\Debug\BusinessAccessLayer.dll
+D:\GitHub\QuanLyKhachSan_Win\BusinessAccessLayer\obj\Debug\BusinessAccessLayer.pdb
+D:\GitHub\QuanLyKhachSan_Win\BusinessAccessLayer\bin\Debug\DataAccessLayer.dll
+D:\GitHub\QuanLyKhachSan_Win\BusinessAccessLayer\bin\Debug\DataAccessLayer.pdb
+D:\GitHub\QuanLyKhachSan_Win\BusinessAccessLayer\bin\Debug\DataAccessLayer.dll.config

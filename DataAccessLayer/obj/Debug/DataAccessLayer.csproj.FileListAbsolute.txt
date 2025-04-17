@@ -1,0 +1,12 @@
+D:\GitHub\DataAccessLayer\bin\Debug\DataAccessLayer.dll.config
+D:\GitHub\DataAccessLayer\bin\Debug\DataAccessLayer.dll
+D:\GitHub\DataAccessLayer\bin\Debug\DataAccessLayer.pdb
+D:\GitHub\DataAccessLayer\bin\Debug\EntityFramework.dll
+D:\GitHub\DataAccessLayer\bin\Debug\EntityFramework.SqlServer.dll
+D:\GitHub\DataAccessLayer\bin\Debug\EntityFramework.xml
+D:\GitHub\DataAccessLayer\bin\Debug\EntityFramework.SqlServer.xml
+D:\GitHub\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.AssemblyReference.cache
+D:\GitHub\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.CoreCompileInputs.cache
+D:\GitHub\DataAccessLayer\obj\Debug\DataAcce.E67BD773.Up2Date
+D:\GitHub\DataAccessLayer\obj\Debug\DataAccessLayer.dll
+D:\GitHub\DataAccessLayer\obj\Debug\DataAccessLayer.pdb

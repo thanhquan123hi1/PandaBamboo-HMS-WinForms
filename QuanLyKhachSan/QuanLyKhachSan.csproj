@@ -1,0 +1,466 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="packages\EntityFramework.6.4.4\build\EntityFramework.props" Condition="Exists('packages\EntityFramework.6.4.4\build\EntityFramework.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{33C93078-602C-49BB-A725-0AA888E650AC}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>QuanLyKhachSan</RootNamespace>
+    <AssemblyName>QuanLyKhachSan</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BusinessAccessLayer">
+      <HintPath>..\BusinessAccessLayer\bin\Debug\BusinessAccessLayer.dll</HintPath>
+    </Reference>
+    <Reference Include="DataAccessLayer">
+      <HintPath>..\BusinessAccessLayer\bin\Debug\DataAccessLayer.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>packages\EntityFramework.6.4.4\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>packages\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Guna.UI2, Version=2.0.4.7, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
+      <HintPath>packages\Guna.UI2.WinForms.2.0.4.7\lib\net472\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="fCheckIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fCheckIn.Designer.cs">
+      <DependentUpon>fCheckIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fDichVu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fDichVu.Designer.cs">
+      <DependentUpon>fDichVu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fHoaDon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fHoaDon.Designer.cs">
+      <DependentUpon>fHoaDon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fKhachHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fKhachHang.Designer.cs">
+      <DependentUpon>fKhachHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fLogin.Designer.cs">
+      <DependentUpon>fLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fPhong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fPhong.Designer.cs">
+      <DependentUpon>fPhong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fTableManage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fTableManage.Designer.cs">
+      <DependentUpon>fTableManage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fXacNhanGmail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fXacNhanGmail.Designer.cs">
+      <DependentUpon>fXacNhanGmail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fXacNhanMatKhau.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fXacNhanMatKhau.Designer.cs">
+      <DependentUpon>fXacNhanMatKhau.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fXacNhanOTP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fXacNhanOTP.Designer.cs">
+      <DependentUpon>fXacNhanOTP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="fTableManage.resx">
+      <DependentUpon>fTableManage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot 2025-04-11 153758.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\57952d13d2f283206a99d419521f7fe1 - Copy %282%29.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\57952d13d2f283206a99d419521f7fe1 - Copy.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\57952d13d2f283206a99d419521f7fe1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\anh_be_boi.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Anh_To_Mi.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Anh_To_Mi1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\b7f81df43aa6b9229dad05c73d3b345a.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\b7f81df43aa6b9229dad05c73d3b345a1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bar.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bd2a24f8b087266e7dc65dce30ee784b.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bd2a24f8b087266e7dc65dce30ee784b1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bd2a24f8b087266e7dc65dce30ee784b2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\beds.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\beds1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bill %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bill.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bill1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bubble-chat %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bubble-chat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\customer %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\customer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\customer-review.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\desk-bell %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\desk-bell.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DichVu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HB.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HD1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hotel %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hotel %281%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hotel %281%292.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hotel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-back-button-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-back-button-1001.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-gmail-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-gmail-481.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-otp-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-otp-641.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-star-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-star-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-star-96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgb.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgb1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgb2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgc.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgc1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgjpg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgjpg1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Key password.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Key password1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Key User.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Key User1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\key.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\KH1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\leave.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\leave1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LG4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LG4_new.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LG4_new1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LG8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\like.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logout %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logout %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logout %282%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logout %282%292.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logout %282%293.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\love.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\man %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\man.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MG.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ms1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MXL.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ooooooooooooooooooooooooooooooooooo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\QLP1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\QLP11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\star.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sv1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sv11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TenKS.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\thuc_anjpg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\thuc_anjpg1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user-logout %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\videoframe_7928.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\videoframe_79281.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Xong_Hoi.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\z6429700888214_1a7191cb09708672049e64fecd30078e.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\z6429706071124_f754ea60e5bb524317187de54c65c348.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\z6429725394324_c8816b059595e09379c9b8f3ae8fd326.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\z6429725394324_c8816b059595e09379c9b8f3ae8fd3261.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\z6429737198309_95a567c877796173a1114764f3bae5b9.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('packages\EntityFramework.6.4.4\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\EntityFramework.6.4.4\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('packages\EntityFramework.6.4.4\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\EntityFramework.6.4.4\build\EntityFramework.targets'))" />
+  </Target>
+  <Import Project="packages\EntityFramework.6.4.4\build\EntityFramework.targets" Condition="Exists('packages\EntityFramework.6.4.4\build\EntityFramework.targets')" />
+</Project>
