@@ -130,6 +130,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="fCheckIn.resx">
+      <DependentUpon>fCheckIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fPhong.resx">
+      <DependentUpon>fPhong.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="fTableManage.resx">
       <DependentUpon>fTableManage.cs</DependentUpon>
     </EmbeddedResource>

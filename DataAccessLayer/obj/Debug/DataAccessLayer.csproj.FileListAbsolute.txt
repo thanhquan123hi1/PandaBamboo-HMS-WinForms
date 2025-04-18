@@ -10,3 +10,16 @@ D:\GitHub\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.CoreCompileInputs.cac
 D:\GitHub\DataAccessLayer\obj\Debug\DataAcce.E67BD773.Up2Date
 D:\GitHub\DataAccessLayer\obj\Debug\DataAccessLayer.dll
 D:\GitHub\DataAccessLayer\obj\Debug\DataAccessLayer.pdb
+D:\GitHub\Win_QuanLyKhachSan\DataAccessLayer\bin\Debug\DataAccessLayer.dll.config
+D:\GitHub\Win_QuanLyKhachSan\DataAccessLayer\bin\Debug\DataAccessLayer.dll
+D:\GitHub\Win_QuanLyKhachSan\DataAccessLayer\bin\Debug\DataAccessLayer.pdb
+D:\GitHub\Win_QuanLyKhachSan\DataAccessLayer\bin\Debug\EntityFramework.dll
+D:\GitHub\Win_QuanLyKhachSan\DataAccessLayer\bin\Debug\EntityFramework.SqlServer.dll
+D:\GitHub\Win_QuanLyKhachSan\DataAccessLayer\bin\Debug\Guna.UI2.dll
+D:\GitHub\Win_QuanLyKhachSan\DataAccessLayer\bin\Debug\EntityFramework.xml
+D:\GitHub\Win_QuanLyKhachSan\DataAccessLayer\bin\Debug\EntityFramework.SqlServer.xml
+D:\GitHub\Win_QuanLyKhachSan\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.AssemblyReference.cache
+D:\GitHub\Win_QuanLyKhachSan\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.CoreCompileInputs.cache
+D:\GitHub\Win_QuanLyKhachSan\DataAccessLayer\obj\Debug\DataAcce.E67BD773.Up2Date
+D:\GitHub\Win_QuanLyKhachSan\DataAccessLayer\obj\Debug\DataAccessLayer.dll
+D:\GitHub\Win_QuanLyKhachSan\DataAccessLayer\obj\Debug\DataAccessLayer.pdb

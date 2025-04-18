@@ -10,10 +10,10 @@ namespace DataAccessLayer.EntityClass
 {
     public class SuDungDichVu
     {
-        [Required(ErrorMessage = "Mã khách hàng là bắt buộc")]
+        [Key, Column(Order = 0)]
         public int MaKH { get; set; }
 
-        [Required(ErrorMessage = "Mã dịch vụ là bắt buộc")]
+        [Key, Column(Order = 1)]
         public int MaDV { get; set; }
 
         [Required(ErrorMessage = "Số lượng là bắt buộc")]
@@ -23,7 +23,10 @@ namespace DataAccessLayer.EntityClass
         [Required(ErrorMessage = "Thời gian là bắt buộc")]
         public DateTime ThoiGian { get; set; }
 
+        [ForeignKey("MaKH")]
         public virtual KhachHang KhachHang { get; set; }
+
+        [ForeignKey("MaDV")]
         public virtual DichVu DichVu { get; set; }
     }
 }

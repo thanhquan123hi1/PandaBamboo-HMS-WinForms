@@ -60,7 +60,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="DatPhongService.cs" />
+    <Compile Include="KhachDatPhongService.cs" />
+    <Compile Include="PhongService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

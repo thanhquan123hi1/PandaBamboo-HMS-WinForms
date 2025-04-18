@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BusinessAccessLayer;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,11 @@ namespace QuanLyKhachSan
         public fKhachHang()
         {
             InitializeComponent();
+        }
+        private void LoadKhachHang()
+        {
+            KhachDatPhongService dbKhachDatPhong = new KhachDatPhongService();
+            dgvKhachHang.DataSource = KhachDatPhongService.
         }
     }
 }

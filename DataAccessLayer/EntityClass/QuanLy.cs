@@ -10,13 +10,15 @@ namespace DataAccessLayer.EntityClass
 {
     public class QuanLy
     {
-        [Required(ErrorMessage = "Mã phòng là bắt buộc")]
+        [Key, Column(Order = 0)]
         public int MaPH { get; set; }
 
-        [Required(ErrorMessage = "Mã nhân viên là bắt buộc")]
+        [Key, Column(Order = 1)]
         public int MaNV { get; set; }
 
+        [ForeignKey("MaPH")]
         public virtual Phong Phong { get; set; }
+        [ForeignKey("MaNV")]
         public virtual NhanVien NhanVien { get; set; }
     }
 }

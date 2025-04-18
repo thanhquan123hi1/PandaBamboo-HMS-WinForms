@@ -6,11 +6,14 @@ using System.Threading.Tasks;
 using System.Data.Entity;
 using System.ComponentModel.DataAnnotations;
 using DataAccessLayer.EntityClass;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace DataAccessLayer
 {
     public class Phong
     {
+        [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.None)]
         public int MaPH { get; set; }
 
         [Required(ErrorMessage = "Loại phòng là bắt buộc")]

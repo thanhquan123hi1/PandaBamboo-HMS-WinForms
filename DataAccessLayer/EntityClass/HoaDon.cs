@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -32,6 +33,7 @@ namespace DataAccessLayer.EntityClass
 
         public DateTime? NgayTT { get; set; }
 
+        [ForeignKey("MaKH")]
         public virtual KhachHang KhachHang { get; set; }
         public virtual LapHoaDon LapHoaDon { get; set; }
     }

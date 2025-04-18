@@ -39,6 +39,7 @@
             this.lblMaPH = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2ShadowPanel1 = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.dtpNgayCheckout = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.dtpNgayCheckin = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.txtQuocTich = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtSDT = new Guna.UI2.WinForms.Guna2TextBox();
@@ -47,7 +48,6 @@
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.cbxHinhThucDP = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.dtpNgayCheckout = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.pnlTop.SuspendLayout();
             this.guna2ShadowPanel1.SuspendLayout();
             this.SuspendLayout();
@@ -75,6 +75,7 @@
             this.btnDatPhong.Size = new System.Drawing.Size(320, 66);
             this.btnDatPhong.TabIndex = 5;
             this.btnDatPhong.Text = "ĐẶT PHÒNG";
+            this.btnDatPhong.Click += new System.EventHandler(this.btnDatPhong_Click);
             // 
             // guna2ControlBox1
             // 
@@ -168,6 +169,26 @@
             this.guna2ShadowPanel1.ShadowDepth = 150;
             this.guna2ShadowPanel1.Size = new System.Drawing.Size(561, 546);
             this.guna2ShadowPanel1.TabIndex = 17;
+            // 
+            // dtpNgayCheckout
+            // 
+            this.dtpNgayCheckout.Animated = true;
+            this.dtpNgayCheckout.BackColor = System.Drawing.Color.Transparent;
+            this.dtpNgayCheckout.BorderColor = System.Drawing.Color.Transparent;
+            this.dtpNgayCheckout.BorderRadius = 12;
+            this.dtpNgayCheckout.Checked = true;
+            this.dtpNgayCheckout.CustomFormat = "dd/MM/yyyy";
+            this.dtpNgayCheckout.FillColor = System.Drawing.Color.OliveDrab;
+            this.dtpNgayCheckout.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpNgayCheckout.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtpNgayCheckout.Location = new System.Drawing.Point(209, 477);
+            this.dtpNgayCheckout.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.dtpNgayCheckout.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.dtpNgayCheckout.Name = "dtpNgayCheckout";
+            this.dtpNgayCheckout.Size = new System.Drawing.Size(297, 45);
+            this.dtpNgayCheckout.TabIndex = 40;
+            this.dtpNgayCheckout.UseTransparentBackground = true;
+            this.dtpNgayCheckout.Value = new System.DateTime(2025, 3, 31, 0, 0, 0, 0);
             // 
             // dtpNgayCheckin
             // 
@@ -323,26 +344,6 @@
             this.cbxHinhThucDP.StartIndex = 0;
             this.cbxHinhThucDP.TabIndex = 0;
             this.cbxHinhThucDP.UseWaitCursor = true;
-            // 
-            // dtpNgayCheckout
-            // 
-            this.dtpNgayCheckout.Animated = true;
-            this.dtpNgayCheckout.BackColor = System.Drawing.Color.Transparent;
-            this.dtpNgayCheckout.BorderColor = System.Drawing.Color.Transparent;
-            this.dtpNgayCheckout.BorderRadius = 12;
-            this.dtpNgayCheckout.Checked = true;
-            this.dtpNgayCheckout.CustomFormat = "dd/MM/yyyy";
-            this.dtpNgayCheckout.FillColor = System.Drawing.Color.OliveDrab;
-            this.dtpNgayCheckout.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtpNgayCheckout.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpNgayCheckout.Location = new System.Drawing.Point(209, 477);
-            this.dtpNgayCheckout.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.dtpNgayCheckout.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.dtpNgayCheckout.Name = "dtpNgayCheckout";
-            this.dtpNgayCheckout.Size = new System.Drawing.Size(297, 45);
-            this.dtpNgayCheckout.TabIndex = 40;
-            this.dtpNgayCheckout.UseTransparentBackground = true;
-            this.dtpNgayCheckout.Value = new System.DateTime(2025, 3, 31, 0, 0, 0, 0);
             // 
             // fCheckIn
             // 

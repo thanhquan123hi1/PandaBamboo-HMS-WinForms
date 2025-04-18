@@ -10,17 +10,18 @@ namespace DataAccessLayer.EntityClass
 {
     public class LapHoaDon
     {
-        [Key]
-        [Required(ErrorMessage = "Mã nhân viên là bắt buộc")]
-        public int MaNV { get; set; }
-
-        [Required(ErrorMessage = "Mã hóa đơn là bắt buộc")]
+        [Key, ForeignKey("HoaDon")] // vừa là khóa chính vừa là khóa ngoại đến HoaDon
+        [Required]
         public int MaHD { get; set; }
 
-        [Required(ErrorMessage = "Ngày lập hóa đơn là bắt buộc")]
+        [Required]
+        public int MaNV { get; set; }
+
+        [Required]
         public DateTime NgayLap { get; set; }
 
         public virtual NhanVien NhanVien { get; set; }
-        public virtual HoaDon HoaDon { get; set; }
+
+        public virtual HoaDon HoaDon { get; set; } // navigation đến HoaDon
     }
 }

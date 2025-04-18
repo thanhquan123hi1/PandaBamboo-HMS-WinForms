@@ -31,5 +31,4 @@ namespace DataAccessLayer.EntityClass
         public virtual ICollection<HoaDon> HoaDons { get; set; }
         public virtual ICollection<SuDungDichVu> SuDungDichVus { get; set; }
     }
-
 }

@@ -10,8 +10,9 @@ namespace DataAccessLayer.EntityClass
 {
     public class DatPhong
     {
+        [Key, Column(Order = 0)]
         public int MaPH { get; set; }
-
+        [Key, Column(Order = 1)]
         public int MaKH { get; set; }
 
         [Required(ErrorMessage = "Hình thức đặt phòng là bắt buộc")]
@@ -26,7 +27,9 @@ namespace DataAccessLayer.EntityClass
         public DateTime NgTraPH { get; set; }
 
         // Navigation properties
+        [ForeignKey("MaPH")]
         public virtual Phong Phong { get; set; }
+        [ForeignKey("MaKH")]
         public virtual KhachHang KhachHang { get; set; }
     }
 }

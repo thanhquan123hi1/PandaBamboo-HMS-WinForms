@@ -11,7 +11,8 @@ namespace DataAccessLayer
     public class HotelContext : DbContext
     {
         public HotelContext() : base("HotelDbConnection") 
-        { }
+        {
+        }
         public DbSet<Phong> Phongs { get; set; }
         public DbSet<KhachHang> KhachHangs { get; set; }
         public DbSet<NhanVien> NhanViens { get; set; }
@@ -24,20 +25,12 @@ namespace DataAccessLayer
         public DbSet<SuDungDichVu> SuDungDichVus { get; set; }
         public DbSet<ThuocLoaiDV> ThuocLoaiDVs { get; set; }
         public DbSet<User> Users { get; set; }
-
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
-            // Thiết lập khóa chính phức hợp
-            modelBuilder.Entity<DatPhong>()
-                .HasKey(dp => new { dp.MaPH, dp.MaKH });
-
-            modelBuilder.Entity<QuanLy>()
-                .HasKey(ql => new { ql.MaPH, ql.MaNV });
-
-            modelBuilder.Entity<SuDungDichVu>()
-                .HasKey(sd => new { sd.MaKH, sd.MaDV});
-
-            base.OnModelCreating(modelBuilder);
+            modelBuilder.Entity<Phong>()
+                .HasMany(p => p.DatPhongs)
+                .WithRequired(d => d.Phong)
+                .HasForeignKey(d => d.MaPH);
         }
     }
 }
