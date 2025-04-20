@@ -44,3 +44,4 @@ D:\GitHub\Win_QuanLyKhachSan\QuanLyKhachSan\obj\Debug\QuanLyKh.7BBD220C.Up2Date
 D:\GitHub\Win_QuanLyKhachSan\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.exe
 D:\GitHub\Win_QuanLyKhachSan\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.pdb
 D:\GitHub\Win_QuanLyKhachSan\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.fCheckIn.resources
+D:\GitHub\Win_QuanLyKhachSan\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.fKhachHang.resources

@@ -93,6 +93,7 @@
             this.btnFind.Size = new System.Drawing.Size(121, 40);
             this.btnFind.TabIndex = 2;
             this.btnFind.Text = "Tìm kiếm";
+            this.btnFind.Click += new System.EventHandler(this.btnFind_Click);
             // 
             // txtFloor
             // 

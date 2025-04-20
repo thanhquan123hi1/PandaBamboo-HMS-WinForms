@@ -10,9 +10,14 @@ namespace DataAccessLayer.EntityClass
 {
     public class DatPhong
     {
-        [Key, Column(Order = 0)]
+        [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        public int MaDatPhong { get; set; } // Tạo khóa chính này để thuận lợi cho việc Update MaPH mà không bị lỗi khóa ngoại
+
+        [Required]
         public int MaPH { get; set; }
-        [Key, Column(Order = 1)]
+
+        [Required]
         public int MaKH { get; set; }
 
         [Required(ErrorMessage = "Hình thức đặt phòng là bắt buộc")]
@@ -29,6 +34,7 @@ namespace DataAccessLayer.EntityClass
         // Navigation properties
         [ForeignKey("MaPH")]
         public virtual Phong Phong { get; set; }
+
         [ForeignKey("MaKH")]
         public virtual KhachHang KhachHang { get; set; }
     }

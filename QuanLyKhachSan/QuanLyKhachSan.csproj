@@ -133,6 +133,9 @@
     <EmbeddedResource Include="fCheckIn.resx">
       <DependentUpon>fCheckIn.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="fKhachHang.resx">
+      <DependentUpon>fKhachHang.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="fPhong.resx">
       <DependentUpon>fPhong.cs</DependentUpon>
     </EmbeddedResource>

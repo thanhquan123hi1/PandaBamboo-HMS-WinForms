@@ -21,9 +21,27 @@ namespace QuanLyKhachSan
         }
         void loadListPhong()
         {
-            flpPhong.Controls.Clear();
             PhongService phongService = new PhongService();
             List<Phong> listPhong = phongService.GetAllPhongs();
+            flpPhong.Controls.Clear();
+            string searchMaPH = txtMaPH.Text.Trim();
+            string searchFloor = txtFloor.Text.Trim();
+            string selectedStatus = cbxStatus.SelectedItem?.ToString(); // Lấy trạng thái từ ComboBox
+
+            // Nếu người dùng nhập mã phòng, lọc danh sách theo mã phòng
+            if (!string.IsNullOrEmpty(searchMaPH))
+            {
+                listPhong = listPhong.Where(p => p.MaPH.ToString().Contains(searchMaPH)).ToList();
+            }
+            if (!string.IsNullOrEmpty(searchFloor))
+            {
+                listPhong = listPhong.Where(p => p.MaPH.ToString().StartsWith(searchFloor)).ToList();
+            }
+            // Lọc theo trạng thái phòng nếu có chọn trong ComboBox
+            if (!string.IsNullOrEmpty(selectedStatus) && selectedStatus != "Tất cả")
+            {
+                listPhong = listPhong.Where(p => p.TinhTrangPH == selectedStatus).ToList();
+            }
             foreach (Phong item in listPhong)
             {
                 string status = "";
@@ -73,6 +91,11 @@ namespace QuanLyKhachSan
                     loadListPhong();
                 }
             }
+        }
+
+        private void btnFind_Click(object sender, EventArgs e)
+        {
+            loadListPhong();
         }
     }
 }

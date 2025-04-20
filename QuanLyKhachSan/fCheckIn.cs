@@ -31,7 +31,6 @@ namespace QuanLyKhachSan
             {
                 DatPhongService dbKhachDatPhong = new DatPhongService();
                 string err = "";
-
                 // Lấy dữ liệu từ các controls
                 string tenKH = txtTen.Text.Trim();
                 string cccd = txtCCCD.Text.Trim();
@@ -50,7 +49,7 @@ namespace QuanLyKhachSan
                 }
 
                 // Thực hiện thêm khách hàng và đặt phòng
-                bool success = dbKhachDatPhong.InsertKhachHangDatPhong(tenKH, quocTich, cccd, sdt, maph, hinhThucDP, ngayNhanPH, ngayTraPH);
+                bool success = dbKhachDatPhong.InsertKhachHangDatPhong(ref err, tenKH, quocTich, cccd, sdt, maph, hinhThucDP, ngayNhanPH, ngayTraPH);
 
                 if (success)
                 {
@@ -58,7 +57,7 @@ namespace QuanLyKhachSan
                 }
                 else
                 {
-                    MessageBox.Show("Lỗi đặt phòng: " + err, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Khách hàng đã tồn tại!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
                 this.DialogResult = DialogResult.OK;
                 this.Close();
