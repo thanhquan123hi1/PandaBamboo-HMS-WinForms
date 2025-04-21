@@ -52,18 +52,18 @@ namespace BusinessAccessLayer
             _context.SaveChanges();
             return true;
         }
-        // Tìm kiếm hóa đơn theo từ khóa
-        public List<HoaDon> TimKiemHoaDon(string tuKhoa)
-        {
-            var ketQua = _context.HoaDons
-                .Join(_context.DatPhongs
-                    dp => dp.MaPH,
-                    (temp, dp) => new { HoaDon = temp, DatPhong = dp })
-                .Where(x => x.HoaDon.KhachHang.TenKH.Contains(tuKhoa)
-                         || x.HoaDon.KhachHang.SDT.Contains(tuKhoa)
-                         || x.DatPhong.MaPH.ToString().Contains(tuKhoa)) // Nếu MaPH là số
-                .Select(x => x.HoaDon)
-                .ToList();
-        }
+        //// Tìm kiếm hóa đơn theo từ khóa
+        //public List<HoaDon> TimKiemHoaDon(string tuKhoa)
+        //{
+        //    var ketQua = _context.HoaDons
+        //        .Join(_context.DatPhongs
+        //            dp => dp.MaPH,
+        //            (temp, dp) => new { HoaDon = temp, DatPhong = dp })
+        //        .Where(x => x.HoaDon.KhachHang.TenKH.Contains(tuKhoa)
+        //                 || x.HoaDon.KhachHang.SDT.Contains(tuKhoa)
+        //                 || x.DatPhong.MaPH.ToString().Contains(tuKhoa)) // Nếu MaPH là số
+        //        .Select(x => x.HoaDon)
+        //        .ToList();
+        //}
     }
 }
