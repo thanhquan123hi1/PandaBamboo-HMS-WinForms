@@ -45,3 +45,4 @@ D:\GitHub\Win_QuanLyKhachSan\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.exe
 D:\GitHub\Win_QuanLyKhachSan\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.pdb
 D:\GitHub\Win_QuanLyKhachSan\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.fCheckIn.resources
 D:\GitHub\Win_QuanLyKhachSan\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.fKhachHang.resources
+D:\GitHub\Win_QuanLyKhachSan\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.fDichVu.resources
