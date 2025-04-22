@@ -21,7 +21,7 @@ namespace DataAccessLayer.EntityClass
 
         [Required(ErrorMessage = "Tổng tiền là bắt buộc")]
         [Range(0, double.MaxValue, ErrorMessage = "Tổng tiền phải >= 0")]
-        public decimal TongTien { get; set; }
+        public decimal? TongTien { get; set; }
 
         [Required(ErrorMessage = "Tình trạng thanh toán là bắt buộc")]
         [RegularExpression("Chua Thanh Toan|Da Thanh Toan", ErrorMessage = "Tình trạng thanh toán không hợp lệ")]

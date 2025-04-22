@@ -46,3 +46,8 @@ D:\GitHub\Win_QuanLyKhachSan\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.pdb
 D:\GitHub\Win_QuanLyKhachSan\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.fCheckIn.resources
 D:\GitHub\Win_QuanLyKhachSan\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.fKhachHang.resources
 D:\GitHub\Win_QuanLyKhachSan\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.fDichVu.resources
+D:\GitHub\Win_QuanLyKhachSan\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.fHoaDon.resources
+D:\GitHub\Win_QuanLyKhachSan\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.fLogin.resources
+D:\GitHub\Win_QuanLyKhachSan\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.fXacNhanGmail.resources
+D:\GitHub\Win_QuanLyKhachSan\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.fXacNhanMatKhau.resources
+D:\GitHub\Win_QuanLyKhachSan\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.fXacNhanOTP.resources

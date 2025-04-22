@@ -34,13 +34,13 @@
             this.guna2ShadowPanel1 = new Guna.UI2.WinForms.Guna2ShadowPanel();
             this.tBMK2 = new Guna.UI2.WinForms.Guna2TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.guna2GradientButton1 = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.btnConfirm = new Guna.UI2.WinForms.Guna2GradientButton();
             this.tBMK1 = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2ControlBox2 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2AnimateWindow1 = new Guna.UI2.WinForms.Guna2AnimateWindow(this.components);
-            this.guna2ImageButton1 = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.btnBack = new Guna.UI2.WinForms.Guna2ImageButton();
             this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.guna2ShadowPanel1.SuspendLayout();
             this.guna2Panel1.SuspendLayout();
@@ -61,7 +61,7 @@
             this.guna2ShadowPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.guna2ShadowPanel1.Controls.Add(this.tBMK2);
             this.guna2ShadowPanel1.Controls.Add(this.label2);
-            this.guna2ShadowPanel1.Controls.Add(this.guna2GradientButton1);
+            this.guna2ShadowPanel1.Controls.Add(this.btnConfirm);
             this.guna2ShadowPanel1.Controls.Add(this.tBMK1);
             this.guna2ShadowPanel1.FillColor = System.Drawing.Color.Transparent;
             this.guna2ShadowPanel1.Location = new System.Drawing.Point(293, 1);
@@ -106,21 +106,22 @@
             this.label2.TabIndex = 5;
             this.label2.Text = "NEW PASSWORD";
             // 
-            // guna2GradientButton1
+            // btnConfirm
             // 
-            this.guna2GradientButton1.AutoRoundedCorners = true;
-            this.guna2GradientButton1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2GradientButton1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2GradientButton1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2GradientButton1.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2GradientButton1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2GradientButton1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2GradientButton1.ForeColor = System.Drawing.Color.White;
-            this.guna2GradientButton1.Location = new System.Drawing.Point(125, 456);
-            this.guna2GradientButton1.Name = "guna2GradientButton1";
-            this.guna2GradientButton1.Size = new System.Drawing.Size(186, 57);
-            this.guna2GradientButton1.TabIndex = 2;
-            this.guna2GradientButton1.Text = "Confirm";
+            this.btnConfirm.AutoRoundedCorners = true;
+            this.btnConfirm.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnConfirm.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnConfirm.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnConfirm.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnConfirm.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnConfirm.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnConfirm.ForeColor = System.Drawing.Color.White;
+            this.btnConfirm.Location = new System.Drawing.Point(125, 456);
+            this.btnConfirm.Name = "btnConfirm";
+            this.btnConfirm.Size = new System.Drawing.Size(186, 57);
+            this.btnConfirm.TabIndex = 2;
+            this.btnConfirm.Text = "Confirm";
+            this.btnConfirm.Click += new System.EventHandler(this.btnConfirm_Click);
             // 
             // tBMK1
             // 
@@ -185,20 +186,21 @@
             this.guna2AnimateWindow1.Interval = 10;
             this.guna2AnimateWindow1.TargetForm = this;
             // 
-            // guna2ImageButton1
+            // btnBack
             // 
-            this.guna2ImageButton1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ImageButton1.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.guna2ImageButton1.HoverState.ImageSize = new System.Drawing.Size(64, 64);
-            this.guna2ImageButton1.Image = global::QuanLyKhachSan.Properties.Resources.icons8_back_button_100;
-            this.guna2ImageButton1.ImageOffset = new System.Drawing.Point(0, 0);
-            this.guna2ImageButton1.ImageRotate = 0F;
-            this.guna2ImageButton1.Location = new System.Drawing.Point(948, 481);
-            this.guna2ImageButton1.Name = "guna2ImageButton1";
-            this.guna2ImageButton1.PressedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.guna2ImageButton1.Size = new System.Drawing.Size(102, 67);
-            this.guna2ImageButton1.TabIndex = 9;
-            this.guna2ImageButton1.UseTransparentBackground = true;
+            this.btnBack.BackColor = System.Drawing.Color.Transparent;
+            this.btnBack.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.btnBack.HoverState.ImageSize = new System.Drawing.Size(64, 64);
+            this.btnBack.Image = global::QuanLyKhachSan.Properties.Resources.icons8_back_button_100;
+            this.btnBack.ImageOffset = new System.Drawing.Point(0, 0);
+            this.btnBack.ImageRotate = 0F;
+            this.btnBack.Location = new System.Drawing.Point(948, 481);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.PressedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.btnBack.Size = new System.Drawing.Size(102, 67);
+            this.btnBack.TabIndex = 9;
+            this.btnBack.UseTransparentBackground = true;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
             // guna2DragControl1
             // 
@@ -206,18 +208,18 @@
             this.guna2DragControl1.TargetControl = this.guna2Panel1;
             this.guna2DragControl1.UseTransparentDrag = true;
             // 
-            // XacNhanMatKhau
+            // fXacNhanMatKhau
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::QuanLyKhachSan.Properties.Resources.imgc;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1053, 560);
-            this.Controls.Add(this.guna2ImageButton1);
+            this.Controls.Add(this.btnBack);
             this.Controls.Add(this.guna2Panel1);
             this.Controls.Add(this.guna2ShadowPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "XacNhanMatKhau";
+            this.Name = "fXacNhanMatKhau";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "XacNhanMatKhau";
             this.guna2ShadowPanel1.ResumeLayout(false);
@@ -231,14 +233,14 @@
         private Guna.UI2.WinForms.Guna2ShadowForm guna2ShadowForm1;
         private Guna.UI2.WinForms.Guna2ShadowPanel guna2ShadowPanel1;
         private System.Windows.Forms.Label label2;
-        private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton1;
+        private Guna.UI2.WinForms.Guna2GradientButton btnConfirm;
         private Guna.UI2.WinForms.Guna2TextBox tBMK1;
         private Guna.UI2.WinForms.Guna2TextBox tBMK2;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox2;
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
         private Guna.UI2.WinForms.Guna2AnimateWindow guna2AnimateWindow1;
-        private Guna.UI2.WinForms.Guna2ImageButton guna2ImageButton1;
+        private Guna.UI2.WinForms.Guna2ImageButton btnBack;
         private Guna.UI2.WinForms.Guna2DragControl guna2DragControl1;
     }
 }

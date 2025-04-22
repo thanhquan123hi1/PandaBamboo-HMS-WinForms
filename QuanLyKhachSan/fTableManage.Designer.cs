@@ -39,7 +39,6 @@
             this.btnHoaDon = new Guna.UI2.WinForms.Guna2Button();
             this.btnKhachHang = new Guna.UI2.WinForms.Guna2Button();
             this.btnDichVu = new Guna.UI2.WinForms.Guna2Button();
-            this.btnChat = new Guna.UI2.WinForms.Guna2Button();
             this.btnQuanLyPhong = new Guna.UI2.WinForms.Guna2Button();
             this.pnlContainer = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
@@ -116,7 +115,6 @@
             this.pnlLeft.Controls.Add(this.btnHoaDon);
             this.pnlLeft.Controls.Add(this.btnKhachHang);
             this.pnlLeft.Controls.Add(this.btnDichVu);
-            this.pnlLeft.Controls.Add(this.btnChat);
             this.pnlLeft.Controls.Add(this.btnQuanLyPhong);
             this.pnlLeft.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnlLeft.FillColor = System.Drawing.Color.Transparent;
@@ -156,6 +154,7 @@
             this.btnLogOut.Size = new System.Drawing.Size(249, 75);
             this.btnLogOut.TabIndex = 5;
             this.btnLogOut.Text = "Đăng xuất";
+            this.btnLogOut.Click += new System.EventHandler(this.btnLogOut_Click);
             // 
             // btnHoaDon
             // 
@@ -252,38 +251,6 @@
             this.btnDichVu.TabIndex = 2;
             this.btnDichVu.Text = "Dịch vụ";
             this.btnDichVu.Click += new System.EventHandler(this.btnDichVu_Click);
-            // 
-            // btnChat
-            // 
-            this.btnChat.BorderColor = System.Drawing.Color.LightGray;
-            this.btnChat.BorderThickness = 2;
-            this.btnChat.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
-            this.btnChat.CheckedState.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(87)))), ((int)(((byte)(129)))));
-            this.btnChat.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(238)))), ((int)(((byte)(220)))));
-            this.btnChat.CustomBorderThickness = new System.Windows.Forms.Padding(5, 0, 0, 0);
-            this.btnChat.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnChat.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnChat.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnChat.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnChat.FillColor = System.Drawing.Color.Transparent;
-            this.btnChat.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold);
-            this.btnChat.ForeColor = System.Drawing.Color.Black;
-            this.btnChat.HoverState.BorderColor = System.Drawing.Color.Transparent;
-            this.btnChat.HoverState.CustomBorderColor = System.Drawing.Color.Black;
-            this.btnChat.HoverState.FillColor = System.Drawing.Color.LightSteelBlue;
-            this.btnChat.HoverState.ForeColor = System.Drawing.Color.Blue;
-            this.btnChat.HoverState.Image = global::QuanLyKhachSan.Properties.Resources.bubble_chat__1_;
-            this.btnChat.Image = global::QuanLyKhachSan.Properties.Resources.bubble_chat;
-            this.btnChat.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnChat.ImageOffset = new System.Drawing.Point(14, 0);
-            this.btnChat.ImageSize = new System.Drawing.Size(34, 34);
-            this.btnChat.ImeMode = System.Windows.Forms.ImeMode.Disable;
-            this.btnChat.Location = new System.Drawing.Point(1, 479);
-            this.btnChat.Name = "btnChat";
-            this.btnChat.PressedDepth = 0;
-            this.btnChat.Size = new System.Drawing.Size(248, 69);
-            this.btnChat.TabIndex = 1;
-            this.btnChat.Text = "Tin nhắn";
             // 
             // btnQuanLyPhong
             // 
@@ -482,7 +449,6 @@
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox2;
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
         private Guna.UI2.WinForms.Guna2Button btnQuanLyPhong;
-        private Guna.UI2.WinForms.Guna2Button btnChat;
         private Guna.UI2.WinForms.Guna2Button btnKhachHang;
         private Guna.UI2.WinForms.Guna2Panel pnlLeft;
         private Guna.UI2.WinForms.Guna2Panel pnlContainer;

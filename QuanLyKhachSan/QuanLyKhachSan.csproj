@@ -136,14 +136,29 @@
     <EmbeddedResource Include="fDichVu.resx">
       <DependentUpon>fDichVu.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="fHoaDon.resx">
+      <DependentUpon>fHoaDon.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="fKhachHang.resx">
       <DependentUpon>fKhachHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fLogin.resx">
+      <DependentUpon>fLogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="fPhong.resx">
       <DependentUpon>fPhong.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="fTableManage.resx">
       <DependentUpon>fTableManage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fXacNhanGmail.resx">
+      <DependentUpon>fXacNhanGmail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fXacNhanMatKhau.resx">
+      <DependentUpon>fXacNhanMatKhau.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fXacNhanOTP.resx">
+      <DependentUpon>fXacNhanOTP.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

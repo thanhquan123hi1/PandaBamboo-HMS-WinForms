@@ -55,5 +55,10 @@ namespace QuanLyKhachSan
         {
             container(new fHoaDon());
         }
+
+        private void btnLogOut_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+        }
     }
 }

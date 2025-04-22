@@ -38,7 +38,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.tBForget = new Guna.UI2.WinForms.Guna2TileButton();
-            this.bTLogin = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.btnLogin = new Guna.UI2.WinForms.Guna2GradientButton();
             this.tBMKDN = new Guna.UI2.WinForms.Guna2TextBox();
             this.tBTenDN = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
@@ -79,7 +79,7 @@
             this.panel_Body.Controls.Add(this.label2);
             this.panel_Body.Controls.Add(this.label1);
             this.panel_Body.Controls.Add(this.tBForget);
-            this.panel_Body.Controls.Add(this.bTLogin);
+            this.panel_Body.Controls.Add(this.btnLogin);
             this.panel_Body.Controls.Add(this.tBMKDN);
             this.panel_Body.Controls.Add(this.tBTenDN);
             this.panel_Body.FillColor = System.Drawing.Color.Transparent;
@@ -129,22 +129,24 @@
             this.tBForget.TabIndex = 3;
             this.tBForget.Text = "Forget Username or Password ?";
             this.tBForget.UseTransparentBackground = true;
+            this.tBForget.Click += new System.EventHandler(this.tBForget_Click);
             // 
-            // bTLogin
+            // btnLogin
             // 
-            this.bTLogin.AutoRoundedCorners = true;
-            this.bTLogin.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.bTLogin.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.bTLogin.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.bTLogin.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.bTLogin.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.bTLogin.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.bTLogin.ForeColor = System.Drawing.Color.White;
-            this.bTLogin.Location = new System.Drawing.Point(125, 373);
-            this.bTLogin.Name = "bTLogin";
-            this.bTLogin.Size = new System.Drawing.Size(186, 57);
-            this.bTLogin.TabIndex = 2;
-            this.bTLogin.Text = "Login";
+            this.btnLogin.AutoRoundedCorners = true;
+            this.btnLogin.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnLogin.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnLogin.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnLogin.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnLogin.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnLogin.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnLogin.ForeColor = System.Drawing.Color.White;
+            this.btnLogin.Location = new System.Drawing.Point(125, 373);
+            this.btnLogin.Name = "btnLogin";
+            this.btnLogin.Size = new System.Drawing.Size(186, 57);
+            this.btnLogin.TabIndex = 2;
+            this.btnLogin.Text = "Login";
+            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
             // tBMKDN
             // 
@@ -233,7 +235,7 @@
             this.guna2DragControl1.TargetControl = this.guna2Panel1;
             this.guna2DragControl1.UseTransparentDrag = true;
             // 
-            // Login
+            // fLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -246,7 +248,7 @@
             this.Controls.Add(this.panel_Body);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Login";
+            this.Name = "fLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
             this.panel_Body.ResumeLayout(false);
@@ -267,7 +269,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private Guna.UI2.WinForms.Guna2TileButton tBForget;
-        private Guna.UI2.WinForms.Guna2GradientButton bTLogin;
+        private Guna.UI2.WinForms.Guna2GradientButton btnLogin;
         private Guna.UI2.WinForms.Guna2TextBox tBMKDN;
         private Guna.UI2.WinForms.Guna2TextBox tBTenDN;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;

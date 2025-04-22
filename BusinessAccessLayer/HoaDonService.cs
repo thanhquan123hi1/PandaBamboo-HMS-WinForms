@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -52,18 +53,83 @@ namespace BusinessAccessLayer
             _context.SaveChanges();
             return true;
         }
-        //// Tìm kiếm hóa đơn theo từ khóa
-        //public List<HoaDon> TimKiemHoaDon(string tuKhoa)
-        //{
-        //    var ketQua = _context.HoaDons
-        //        .Join(_context.DatPhongs
-        //            dp => dp.MaPH,
-        //            (temp, dp) => new { HoaDon = temp, DatPhong = dp })
-        //        .Where(x => x.HoaDon.KhachHang.TenKH.Contains(tuKhoa)
-        //                 || x.HoaDon.KhachHang.SDT.Contains(tuKhoa)
-        //                 || x.DatPhong.MaPH.ToString().Contains(tuKhoa)) // Nếu MaPH là số
-        //        .Select(x => x.HoaDon)
-        //        .ToList();
-        //}
+        // Tìm kiếm hóa đơn theo từ khóa
+        public List<dynamic> dsHoaDon(string tuKhoa)
+        {
+            var danhSach = (from hd in _context.HoaDons
+                            join dp in _context.DatPhongs on hd.MaKH equals dp.MaKH
+                            where hd.MaHD.ToString().Contains(tuKhoa)
+                                  || hd.TenHD.Contains(tuKhoa)
+                                  || hd.KhachHang.TenKH.Contains(tuKhoa)
+                                  || hd.KhachHang.SDT.Contains(tuKhoa)
+                                  || hd.TongTien.ToString().Contains(tuKhoa)
+                                  || hd.TinhTrangTT.Contains(tuKhoa)
+                                  || (dp.MaPH.ToString().Contains(tuKhoa))
+                            select new
+                            {
+                                hd.MaHD,
+                                hd.TenHD,
+                                MaKH = hd.MaKH.ToString(),
+                                TenKH = hd.KhachHang.TenKH,
+                                SDT = hd.KhachHang.SDT,
+                                hd.TongTien,
+                                hd.TinhTrangTT,
+                                MaPH = dp.MaPH.ToString()
+                            }).ToList<dynamic>();
+
+            return danhSach;
+        }
+        // Tính tổng tiền tất cả hóa đơn của 1 khách hàng
+        public decimal tongTienHD(string tuKhoa)
+        {
+            var tongTien = (from hd in _context.HoaDons
+                            join dp in _context.DatPhongs on hd.MaKH equals dp.MaKH
+                            where hd.MaHD.ToString().Contains(tuKhoa)
+                                  || hd.TenHD.Contains(tuKhoa)
+                                  || hd.KhachHang.TenKH.Contains(tuKhoa)
+                                  || hd.KhachHang.SDT.Contains(tuKhoa)
+                                  || hd.TongTien.ToString().Contains(tuKhoa)
+                                  || hd.TinhTrangTT.Contains(tuKhoa)
+                                  || (dp.MaPH.ToString().Contains(tuKhoa))
+                            select hd.TongTien).Sum() ?? 0; // Nếu null thì trả về 0
+
+            return tongTien;
+        }
+        // Thanh toán hóa đơn
+        public bool ThanhToanHoaDon(int maKH, int maHD, string hinhThucTT, DateTime ngayTT, int maPH)
+        {
+            var hoaDon = _context.HoaDons.FirstOrDefault(h => h.MaHD == maHD && h.TinhTrangTT == "Chua Thanh Toan");
+            if (hoaDon == null)
+            {
+                return false; // Không tìm thấy hóa đơn hoặc đã thanh toán
+            }
+
+            // Cập nhật thông tin thanh toán
+            hoaDon.NgayTT = ngayTT;
+            hoaDon.HinhThucTT = hinhThucTT;
+            hoaDon.TinhTrangTT = "Da Thanh Toan";
+
+            // Nếu là hóa đơn dịch vụ
+            if (hoaDon.TenHD != "Hóa đơn đặt phòng")
+            {
+                var dichVus = _context.SuDungDichVus.Where(dv => dv.MaKH == maKH);
+                _context.SuDungDichVus.RemoveRange(dichVus);
+            }
+
+            // Nếu là hóa đơn đặt phòng
+            if (hoaDon.TenHD == "Hóa đơn đặt phòng")
+            {
+                var datPhong = _context.DatPhongs.FirstOrDefault(dp => dp.MaPH == maPH);
+                if (datPhong != null)
+                {
+                    DatPhongService traPhong = new DatPhongService();
+                    traPhong.TraPhong(maPH);
+                    _context.DatPhongs.Remove(datPhong);
+                }
+            }
+            
+            _context.SaveChanges();
+            return true; // Thanh toán thành công
+        }
     }
 }

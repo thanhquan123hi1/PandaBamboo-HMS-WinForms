@@ -97,18 +97,13 @@ namespace BusinessAccessLayer
         // Cập nhật trạng thái phòng khi có khách trả phòng
         public void TraPhong(int traPhong)
         {
-            var datPhong = _context.DatPhongs.FirstOrDefault(dp => dp.MaPH == traPhong);
-            if (datPhong != null)
+            var phong = _context.Phongs.FirstOrDefault(p => p.MaPH == traPhong);
+            if (phong != null)
             {
-                var phong = _context.Phongs.FirstOrDefault(p => p.MaPH == datPhong.MaPH);
-                if (phong != null)
-                {
-                    phong.TinhTrangPH = "Dọn Dẹp";
-                }
-
-                _context.DatPhongs.Remove(datPhong);
-                _context.SaveChanges();
+                phong.TinhTrangPH = "Dọn Dẹp";
             }
+
+            _context.SaveChanges();
         }
 
         // Cập nhật trạng thái phòng khi có khách đổi phòng 
