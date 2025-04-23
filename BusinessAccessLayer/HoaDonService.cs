@@ -117,7 +117,7 @@ namespace BusinessAccessLayer
             }
 
             // Nếu là hóa đơn đặt phòng
-            if (hoaDon.TenHD == "Hóa đơn đặt phòng")
+            else
             {
                 var datPhong = _context.DatPhongs.FirstOrDefault(dp => dp.MaPH == maPH);
                 if (datPhong != null)
@@ -127,7 +127,14 @@ namespace BusinessAccessLayer
                     _context.DatPhongs.Remove(datPhong);
                 }
             }
-            
+
+            // Xóa khách hàng đã thanh toán
+            var khachHang = _context.KhachHangs.FirstOrDefault(kh => kh.MaKH == maKH);
+                if (khachHang != null)
+                {
+                    _context.KhachHangs.Remove(khachHang);
+                }
+             
             _context.SaveChanges();
             return true; // Thanh toán thành công
         }

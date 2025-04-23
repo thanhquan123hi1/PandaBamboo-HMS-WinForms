@@ -27,9 +27,9 @@ namespace QuanLyKhachSan
             dgvHoaDon.DataSource = dbHoaDon.dsHoaDon(tuKhoa);
             if (!string.IsNullOrEmpty(txtSearchHD.Text))
             {
-                txtTongTien.Text = "Tổng tiền: " + tongTien.ToString("N0") + "VND";
-                txtThue.Text = "Thuế VAT: " + (tongTien * 0.1m).ToString("N0") + "VND";
-                txtThanhTien.Text = "Thành tiền: " + (tongTien + (tongTien * 0.1m)).ToString("N0") + "VND";
+                txtTongTien.Text = "Tổng tiền: " + tongTien.ToString("N0") + " VND";
+                txtThue.Text = "Thuế VAT: " + (tongTien * 0.1m).ToString("N0") + " VND";
+                txtThanhTien.Text = "Thành tiền: " + (tongTien + (tongTien * 0.1m)).ToString("N0") + " VND";
             }
         }
         private void txtSearchHD_KeyDown(object sender, KeyEventArgs e)
