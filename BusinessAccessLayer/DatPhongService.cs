@@ -105,6 +105,17 @@ namespace BusinessAccessLayer
 
             _context.SaveChanges();
         }
+        // Cập nhật trạng thái phòng khi đã dọn dẹp xog
+        public void PhongTrong(int maPhong)
+        {
+            var phong = _context.Phongs.FirstOrDefault(p => p.MaPH == maPhong);
+            if (phong != null)
+            {
+                phong.TinhTrangPH = "Trống";
+            }
+
+            _context.SaveChanges();
+        }
 
         // Cập nhật trạng thái phòng khi có khách đổi phòng 
         public void DoiPhong(int maPhongCu, int maPhongMoi)

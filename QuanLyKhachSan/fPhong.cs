@@ -68,6 +68,11 @@ namespace QuanLyKhachSan
                     btn.ForeColor = Color.FromArgb(143, 135, 241);
                     btn.FillColor = Color.FromArgb(255, 255, 255);
                 }
+                else if (item.TinhTrangPH == "Dọn Dẹp")
+                {
+                    btn.ForeColor = Color.FromArgb(255, 255, 255);
+                    btn.FillColor = Color.FromArgb(0, 135, 158);
+                }
                 else
                 {
                     btn.ForeColor = Color.FromArgb(255, 255, 255);
@@ -88,6 +93,16 @@ namespace QuanLyKhachSan
                 fCheckIn fCheckIn = new fCheckIn(maPH);
                 if (fCheckIn.ShowDialog() == DialogResult.OK)
                 {
+                    loadListPhong();
+                }
+            }
+            else if (btn.FillColor == Color.FromArgb(0, 135, 158)) // Nếu phòng đang dọn dẹp
+            {
+                DialogResult result = MessageBox.Show("Bạn có muốn chuyển trạng thái thành 'Trống' phòng này không?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (result == DialogResult.Yes)
+                {
+                    DatPhongService dp = new DatPhongService();
+                    dp.PhongTrong(maPH);
                     loadListPhong();
                 }
             }
