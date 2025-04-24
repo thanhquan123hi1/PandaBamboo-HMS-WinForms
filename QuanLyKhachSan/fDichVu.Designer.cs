@@ -36,22 +36,34 @@
             this.label5 = new System.Windows.Forms.Label();
             this.btnGiac = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2HtmlLabel10 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2PictureBox14 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2HtmlLabel11 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2PictureBox15 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.guna2PictureBox16 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.pnlXongHoi = new Guna.UI2.WinForms.Guna2Panel();
             this.label4 = new System.Windows.Forms.Label();
             this.btnXongHoi = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2HtmlLabel8 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2PictureBox11 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2HtmlLabel9 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2PictureBox12 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.guna2PictureBox13 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.pnlHoBoi = new Guna.UI2.WinForms.Guna2Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.btnHoBoi = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2HtmlLabel5 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2PictureBox8 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2HtmlLabel7 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2PictureBox9 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.guna2PictureBox10 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.pnlBar = new Guna.UI2.WinForms.Guna2Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.btnBar = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2PictureBox4 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2PictureBox5 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.guna2PictureBox7 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.dtpTimeDatDV = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel6 = new Guna.UI2.WinForms.Guna2Panel();
@@ -59,6 +71,7 @@
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.txtMDV = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtUserName = new Guna.UI2.WinForms.Guna2TextBox();
+            this.guna2PictureBox6 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.btnSuDungDV = new Guna.UI2.WinForms.Guna2GradientButton();
             this.txtNgSDDV = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtSLDV = new Guna.UI2.WinForms.Guna2TextBox();
@@ -67,51 +80,38 @@
             this.txtSDT = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2HtmlLabel6 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.pnlNhHang = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2ImageButton1 = new Guna.UI2.WinForms.Guna2ImageButton();
             this.label1 = new System.Windows.Forms.Label();
             this.btnNhaHang = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.elNhaHang = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.elBar = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.elHoBoi = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.elXongHoi = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.elGiac = new Guna.UI2.WinForms.Guna2Elipse(this.components);
-            this.guna2PictureBox14 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2PictureBox15 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2PictureBox16 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2PictureBox11 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2PictureBox12 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2PictureBox13 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2PictureBox8 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2PictureBox9 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2PictureBox10 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2PictureBox4 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2PictureBox5 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2PictureBox7 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2PictureBox6 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2ImageButton1 = new Guna.UI2.WinForms.Guna2ImageButton();
-            this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.pnlContainer.SuspendLayout();
             this.pnlGiac.SuspendLayout();
-            this.pnlXongHoi.SuspendLayout();
-            this.pnlHoBoi.SuspendLayout();
-            this.pnlBar.SuspendLayout();
-            this.guna2Panel1.SuspendLayout();
-            this.pnlNhHang.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox14)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox15)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox16)).BeginInit();
+            this.pnlXongHoi.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox13)).BeginInit();
+            this.pnlHoBoi.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox10)).BeginInit();
+            this.pnlBar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox7)).BeginInit();
+            this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox6)).BeginInit();
+            this.pnlNhHang.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -206,6 +206,17 @@
             this.guna2HtmlLabel10.TabIndex = 34;
             this.guna2HtmlLabel10.Text = "10";
             // 
+            // guna2PictureBox14
+            // 
+            this.guna2PictureBox14.Image = global::QuanLyKhachSan.Properties.Resources.chat;
+            this.guna2PictureBox14.ImageRotate = 0F;
+            this.guna2PictureBox14.Location = new System.Drawing.Point(107, 174);
+            this.guna2PictureBox14.Name = "guna2PictureBox14";
+            this.guna2PictureBox14.Size = new System.Drawing.Size(28, 32);
+            this.guna2PictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.guna2PictureBox14.TabIndex = 33;
+            this.guna2PictureBox14.TabStop = false;
+            // 
             // guna2HtmlLabel11
             // 
             this.guna2HtmlLabel11.AutoSize = false;
@@ -216,6 +227,29 @@
             this.guna2HtmlLabel11.Size = new System.Drawing.Size(44, 22);
             this.guna2HtmlLabel11.TabIndex = 32;
             this.guna2HtmlLabel11.Text = "2.4";
+            // 
+            // guna2PictureBox15
+            // 
+            this.guna2PictureBox15.Image = global::QuanLyKhachSan.Properties.Resources.icons8_star_96;
+            this.guna2PictureBox15.ImageRotate = 0F;
+            this.guna2PictureBox15.Location = new System.Drawing.Point(12, 174);
+            this.guna2PictureBox15.Name = "guna2PictureBox15";
+            this.guna2PictureBox15.Size = new System.Drawing.Size(28, 32);
+            this.guna2PictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.guna2PictureBox15.TabIndex = 31;
+            this.guna2PictureBox15.TabStop = false;
+            // 
+            // guna2PictureBox16
+            // 
+            this.guna2PictureBox16.BorderRadius = 22;
+            this.guna2PictureBox16.Image = global::QuanLyKhachSan.Properties.Resources.MG;
+            this.guna2PictureBox16.ImageRotate = 0F;
+            this.guna2PictureBox16.Location = new System.Drawing.Point(15, 6);
+            this.guna2PictureBox16.Name = "guna2PictureBox16";
+            this.guna2PictureBox16.Size = new System.Drawing.Size(169, 165);
+            this.guna2PictureBox16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.guna2PictureBox16.TabIndex = 30;
+            this.guna2PictureBox16.TabStop = false;
             // 
             // pnlXongHoi
             // 
@@ -278,6 +312,17 @@
             this.guna2HtmlLabel8.TabIndex = 34;
             this.guna2HtmlLabel8.Text = "500";
             // 
+            // guna2PictureBox11
+            // 
+            this.guna2PictureBox11.Image = global::QuanLyKhachSan.Properties.Resources.chat;
+            this.guna2PictureBox11.ImageRotate = 0F;
+            this.guna2PictureBox11.Location = new System.Drawing.Point(107, 174);
+            this.guna2PictureBox11.Name = "guna2PictureBox11";
+            this.guna2PictureBox11.Size = new System.Drawing.Size(28, 32);
+            this.guna2PictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.guna2PictureBox11.TabIndex = 33;
+            this.guna2PictureBox11.TabStop = false;
+            // 
             // guna2HtmlLabel9
             // 
             this.guna2HtmlLabel9.AutoSize = false;
@@ -288,6 +333,29 @@
             this.guna2HtmlLabel9.Size = new System.Drawing.Size(44, 22);
             this.guna2HtmlLabel9.TabIndex = 32;
             this.guna2HtmlLabel9.Text = "3.2";
+            // 
+            // guna2PictureBox12
+            // 
+            this.guna2PictureBox12.Image = global::QuanLyKhachSan.Properties.Resources.icons8_star_96;
+            this.guna2PictureBox12.ImageRotate = 0F;
+            this.guna2PictureBox12.Location = new System.Drawing.Point(12, 174);
+            this.guna2PictureBox12.Name = "guna2PictureBox12";
+            this.guna2PictureBox12.Size = new System.Drawing.Size(28, 32);
+            this.guna2PictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.guna2PictureBox12.TabIndex = 31;
+            this.guna2PictureBox12.TabStop = false;
+            // 
+            // guna2PictureBox13
+            // 
+            this.guna2PictureBox13.BorderRadius = 22;
+            this.guna2PictureBox13.Image = global::QuanLyKhachSan.Properties.Resources.Xong_Hoi;
+            this.guna2PictureBox13.ImageRotate = 0F;
+            this.guna2PictureBox13.Location = new System.Drawing.Point(16, 8);
+            this.guna2PictureBox13.Name = "guna2PictureBox13";
+            this.guna2PictureBox13.Size = new System.Drawing.Size(169, 165);
+            this.guna2PictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.guna2PictureBox13.TabIndex = 30;
+            this.guna2PictureBox13.TabStop = false;
             // 
             // pnlHoBoi
             // 
@@ -350,6 +418,17 @@
             this.guna2HtmlLabel5.TabIndex = 34;
             this.guna2HtmlLabel5.Text = "7.8k";
             // 
+            // guna2PictureBox8
+            // 
+            this.guna2PictureBox8.Image = global::QuanLyKhachSan.Properties.Resources.chat;
+            this.guna2PictureBox8.ImageRotate = 0F;
+            this.guna2PictureBox8.Location = new System.Drawing.Point(107, 174);
+            this.guna2PictureBox8.Name = "guna2PictureBox8";
+            this.guna2PictureBox8.Size = new System.Drawing.Size(28, 32);
+            this.guna2PictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.guna2PictureBox8.TabIndex = 33;
+            this.guna2PictureBox8.TabStop = false;
+            // 
             // guna2HtmlLabel7
             // 
             this.guna2HtmlLabel7.AutoSize = false;
@@ -360,6 +439,29 @@
             this.guna2HtmlLabel7.Size = new System.Drawing.Size(44, 22);
             this.guna2HtmlLabel7.TabIndex = 32;
             this.guna2HtmlLabel7.Text = "4.5";
+            // 
+            // guna2PictureBox9
+            // 
+            this.guna2PictureBox9.Image = global::QuanLyKhachSan.Properties.Resources.icons8_star_96;
+            this.guna2PictureBox9.ImageRotate = 0F;
+            this.guna2PictureBox9.Location = new System.Drawing.Point(12, 174);
+            this.guna2PictureBox9.Name = "guna2PictureBox9";
+            this.guna2PictureBox9.Size = new System.Drawing.Size(28, 32);
+            this.guna2PictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.guna2PictureBox9.TabIndex = 31;
+            this.guna2PictureBox9.TabStop = false;
+            // 
+            // guna2PictureBox10
+            // 
+            this.guna2PictureBox10.BorderRadius = 22;
+            this.guna2PictureBox10.Image = global::QuanLyKhachSan.Properties.Resources.HB;
+            this.guna2PictureBox10.ImageRotate = 0F;
+            this.guna2PictureBox10.Location = new System.Drawing.Point(16, 6);
+            this.guna2PictureBox10.Name = "guna2PictureBox10";
+            this.guna2PictureBox10.Size = new System.Drawing.Size(169, 165);
+            this.guna2PictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.guna2PictureBox10.TabIndex = 30;
+            this.guna2PictureBox10.TabStop = false;
             // 
             // pnlBar
             // 
@@ -422,6 +524,17 @@
             this.guna2HtmlLabel3.TabIndex = 34;
             this.guna2HtmlLabel3.Text = "3.2k";
             // 
+            // guna2PictureBox4
+            // 
+            this.guna2PictureBox4.Image = global::QuanLyKhachSan.Properties.Resources.chat;
+            this.guna2PictureBox4.ImageRotate = 0F;
+            this.guna2PictureBox4.Location = new System.Drawing.Point(107, 174);
+            this.guna2PictureBox4.Name = "guna2PictureBox4";
+            this.guna2PictureBox4.Size = new System.Drawing.Size(28, 32);
+            this.guna2PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.guna2PictureBox4.TabIndex = 33;
+            this.guna2PictureBox4.TabStop = false;
+            // 
             // guna2HtmlLabel4
             // 
             this.guna2HtmlLabel4.AutoSize = false;
@@ -432,6 +545,29 @@
             this.guna2HtmlLabel4.Size = new System.Drawing.Size(44, 22);
             this.guna2HtmlLabel4.TabIndex = 32;
             this.guna2HtmlLabel4.Text = "3.7";
+            // 
+            // guna2PictureBox5
+            // 
+            this.guna2PictureBox5.Image = global::QuanLyKhachSan.Properties.Resources.icons8_star_96;
+            this.guna2PictureBox5.ImageRotate = 0F;
+            this.guna2PictureBox5.Location = new System.Drawing.Point(12, 174);
+            this.guna2PictureBox5.Name = "guna2PictureBox5";
+            this.guna2PictureBox5.Size = new System.Drawing.Size(28, 32);
+            this.guna2PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.guna2PictureBox5.TabIndex = 31;
+            this.guna2PictureBox5.TabStop = false;
+            // 
+            // guna2PictureBox7
+            // 
+            this.guna2PictureBox7.BorderRadius = 22;
+            this.guna2PictureBox7.Image = global::QuanLyKhachSan.Properties.Resources.Bar;
+            this.guna2PictureBox7.ImageRotate = 0F;
+            this.guna2PictureBox7.Location = new System.Drawing.Point(16, 7);
+            this.guna2PictureBox7.Name = "guna2PictureBox7";
+            this.guna2PictureBox7.Size = new System.Drawing.Size(169, 165);
+            this.guna2PictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.guna2PictureBox7.TabIndex = 30;
+            this.guna2PictureBox7.TabStop = false;
             // 
             // dtpTimeDatDV
             // 
@@ -546,7 +682,19 @@
             this.txtUserName.PlaceholderText = "Tên khách hàng";
             this.txtUserName.SelectedText = "";
             this.txtUserName.Size = new System.Drawing.Size(294, 40);
-            this.txtUserName.TabIndex = 24;
+            this.txtUserName.TabIndex = 1;
+            // 
+            // guna2PictureBox6
+            // 
+            this.guna2PictureBox6.FillColor = System.Drawing.Color.RoyalBlue;
+            this.guna2PictureBox6.Image = global::QuanLyKhachSan.Properties.Resources.DichVu;
+            this.guna2PictureBox6.ImageRotate = 0F;
+            this.guna2PictureBox6.Location = new System.Drawing.Point(11, 17);
+            this.guna2PictureBox6.Name = "guna2PictureBox6";
+            this.guna2PictureBox6.Size = new System.Drawing.Size(123, 117);
+            this.guna2PictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.guna2PictureBox6.TabIndex = 23;
+            this.guna2PictureBox6.TabStop = false;
             // 
             // btnSuDungDV
             // 
@@ -618,7 +766,7 @@
             this.txtSLDV.PlaceholderText = "Số lượng";
             this.txtSLDV.SelectedText = "";
             this.txtSLDV.Size = new System.Drawing.Size(294, 40);
-            this.txtSLDV.TabIndex = 17;
+            this.txtSLDV.TabIndex = 3;
             // 
             // txtTongTien
             // 
@@ -692,7 +840,7 @@
             this.txtSDT.PlaceholderText = "SDT";
             this.txtSDT.SelectedText = "";
             this.txtSDT.Size = new System.Drawing.Size(294, 40);
-            this.txtSDT.TabIndex = 11;
+            this.txtSDT.TabIndex = 2;
             // 
             // guna2HtmlLabel6
             // 
@@ -721,6 +869,21 @@
             this.pnlNhHang.Name = "pnlNhHang";
             this.pnlNhHang.Size = new System.Drawing.Size(201, 342);
             this.pnlNhHang.TabIndex = 1;
+            // 
+            // guna2ImageButton1
+            // 
+            this.guna2ImageButton1.BackgroundImage = global::QuanLyKhachSan.Properties.Resources.chat;
+            this.guna2ImageButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.guna2ImageButton1.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.guna2ImageButton1.HoverState.ImageSize = new System.Drawing.Size(64, 64);
+            this.guna2ImageButton1.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton1.Image")));
+            this.guna2ImageButton1.ImageOffset = new System.Drawing.Point(0, 0);
+            this.guna2ImageButton1.ImageRotate = 0F;
+            this.guna2ImageButton1.Location = new System.Drawing.Point(96, 184);
+            this.guna2ImageButton1.Name = "guna2ImageButton1";
+            this.guna2ImageButton1.PressedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.guna2ImageButton1.Size = new System.Drawing.Size(39, 38);
+            this.guna2ImageButton1.TabIndex = 38;
             // 
             // label1
             // 
@@ -775,6 +938,29 @@
             this.guna2HtmlLabel1.TabIndex = 32;
             this.guna2HtmlLabel1.Text = "4.7";
             // 
+            // guna2PictureBox2
+            // 
+            this.guna2PictureBox2.Image = global::QuanLyKhachSan.Properties.Resources.icons8_star_96;
+            this.guna2PictureBox2.ImageRotate = 0F;
+            this.guna2PictureBox2.Location = new System.Drawing.Point(12, 174);
+            this.guna2PictureBox2.Name = "guna2PictureBox2";
+            this.guna2PictureBox2.Size = new System.Drawing.Size(28, 32);
+            this.guna2PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.guna2PictureBox2.TabIndex = 31;
+            this.guna2PictureBox2.TabStop = false;
+            // 
+            // guna2PictureBox1
+            // 
+            this.guna2PictureBox1.BorderRadius = 22;
+            this.guna2PictureBox1.Image = global::QuanLyKhachSan.Properties.Resources.thuc_anjpg;
+            this.guna2PictureBox1.ImageRotate = 0F;
+            this.guna2PictureBox1.Location = new System.Drawing.Point(16, 9);
+            this.guna2PictureBox1.Name = "guna2PictureBox1";
+            this.guna2PictureBox1.Size = new System.Drawing.Size(169, 165);
+            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.guna2PictureBox1.TabIndex = 30;
+            this.guna2PictureBox1.TabStop = false;
+            // 
             // elNhaHang
             // 
             this.elNhaHang.BorderRadius = 30;
@@ -800,192 +986,6 @@
             this.elGiac.BorderRadius = 30;
             this.elGiac.TargetControl = this.pnlGiac;
             // 
-            // guna2PictureBox14
-            // 
-            this.guna2PictureBox14.Image = global::QuanLyKhachSan.Properties.Resources.chat;
-            this.guna2PictureBox14.ImageRotate = 0F;
-            this.guna2PictureBox14.Location = new System.Drawing.Point(107, 174);
-            this.guna2PictureBox14.Name = "guna2PictureBox14";
-            this.guna2PictureBox14.Size = new System.Drawing.Size(28, 32);
-            this.guna2PictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.guna2PictureBox14.TabIndex = 33;
-            this.guna2PictureBox14.TabStop = false;
-            // 
-            // guna2PictureBox15
-            // 
-            this.guna2PictureBox15.Image = global::QuanLyKhachSan.Properties.Resources.icons8_star_96;
-            this.guna2PictureBox15.ImageRotate = 0F;
-            this.guna2PictureBox15.Location = new System.Drawing.Point(12, 174);
-            this.guna2PictureBox15.Name = "guna2PictureBox15";
-            this.guna2PictureBox15.Size = new System.Drawing.Size(28, 32);
-            this.guna2PictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.guna2PictureBox15.TabIndex = 31;
-            this.guna2PictureBox15.TabStop = false;
-            // 
-            // guna2PictureBox16
-            // 
-            this.guna2PictureBox16.BorderRadius = 22;
-            this.guna2PictureBox16.Image = global::QuanLyKhachSan.Properties.Resources.MG;
-            this.guna2PictureBox16.ImageRotate = 0F;
-            this.guna2PictureBox16.Location = new System.Drawing.Point(15, 6);
-            this.guna2PictureBox16.Name = "guna2PictureBox16";
-            this.guna2PictureBox16.Size = new System.Drawing.Size(169, 165);
-            this.guna2PictureBox16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.guna2PictureBox16.TabIndex = 30;
-            this.guna2PictureBox16.TabStop = false;
-            // 
-            // guna2PictureBox11
-            // 
-            this.guna2PictureBox11.Image = global::QuanLyKhachSan.Properties.Resources.chat;
-            this.guna2PictureBox11.ImageRotate = 0F;
-            this.guna2PictureBox11.Location = new System.Drawing.Point(107, 174);
-            this.guna2PictureBox11.Name = "guna2PictureBox11";
-            this.guna2PictureBox11.Size = new System.Drawing.Size(28, 32);
-            this.guna2PictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.guna2PictureBox11.TabIndex = 33;
-            this.guna2PictureBox11.TabStop = false;
-            // 
-            // guna2PictureBox12
-            // 
-            this.guna2PictureBox12.Image = global::QuanLyKhachSan.Properties.Resources.icons8_star_96;
-            this.guna2PictureBox12.ImageRotate = 0F;
-            this.guna2PictureBox12.Location = new System.Drawing.Point(12, 174);
-            this.guna2PictureBox12.Name = "guna2PictureBox12";
-            this.guna2PictureBox12.Size = new System.Drawing.Size(28, 32);
-            this.guna2PictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.guna2PictureBox12.TabIndex = 31;
-            this.guna2PictureBox12.TabStop = false;
-            // 
-            // guna2PictureBox13
-            // 
-            this.guna2PictureBox13.BorderRadius = 22;
-            this.guna2PictureBox13.Image = global::QuanLyKhachSan.Properties.Resources.Xong_Hoi;
-            this.guna2PictureBox13.ImageRotate = 0F;
-            this.guna2PictureBox13.Location = new System.Drawing.Point(16, 8);
-            this.guna2PictureBox13.Name = "guna2PictureBox13";
-            this.guna2PictureBox13.Size = new System.Drawing.Size(169, 165);
-            this.guna2PictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.guna2PictureBox13.TabIndex = 30;
-            this.guna2PictureBox13.TabStop = false;
-            // 
-            // guna2PictureBox8
-            // 
-            this.guna2PictureBox8.Image = global::QuanLyKhachSan.Properties.Resources.chat;
-            this.guna2PictureBox8.ImageRotate = 0F;
-            this.guna2PictureBox8.Location = new System.Drawing.Point(107, 174);
-            this.guna2PictureBox8.Name = "guna2PictureBox8";
-            this.guna2PictureBox8.Size = new System.Drawing.Size(28, 32);
-            this.guna2PictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.guna2PictureBox8.TabIndex = 33;
-            this.guna2PictureBox8.TabStop = false;
-            // 
-            // guna2PictureBox9
-            // 
-            this.guna2PictureBox9.Image = global::QuanLyKhachSan.Properties.Resources.icons8_star_96;
-            this.guna2PictureBox9.ImageRotate = 0F;
-            this.guna2PictureBox9.Location = new System.Drawing.Point(12, 174);
-            this.guna2PictureBox9.Name = "guna2PictureBox9";
-            this.guna2PictureBox9.Size = new System.Drawing.Size(28, 32);
-            this.guna2PictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.guna2PictureBox9.TabIndex = 31;
-            this.guna2PictureBox9.TabStop = false;
-            // 
-            // guna2PictureBox10
-            // 
-            this.guna2PictureBox10.BorderRadius = 22;
-            this.guna2PictureBox10.Image = global::QuanLyKhachSan.Properties.Resources.HB;
-            this.guna2PictureBox10.ImageRotate = 0F;
-            this.guna2PictureBox10.Location = new System.Drawing.Point(16, 6);
-            this.guna2PictureBox10.Name = "guna2PictureBox10";
-            this.guna2PictureBox10.Size = new System.Drawing.Size(169, 165);
-            this.guna2PictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.guna2PictureBox10.TabIndex = 30;
-            this.guna2PictureBox10.TabStop = false;
-            // 
-            // guna2PictureBox4
-            // 
-            this.guna2PictureBox4.Image = global::QuanLyKhachSan.Properties.Resources.chat;
-            this.guna2PictureBox4.ImageRotate = 0F;
-            this.guna2PictureBox4.Location = new System.Drawing.Point(107, 174);
-            this.guna2PictureBox4.Name = "guna2PictureBox4";
-            this.guna2PictureBox4.Size = new System.Drawing.Size(28, 32);
-            this.guna2PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.guna2PictureBox4.TabIndex = 33;
-            this.guna2PictureBox4.TabStop = false;
-            // 
-            // guna2PictureBox5
-            // 
-            this.guna2PictureBox5.Image = global::QuanLyKhachSan.Properties.Resources.icons8_star_96;
-            this.guna2PictureBox5.ImageRotate = 0F;
-            this.guna2PictureBox5.Location = new System.Drawing.Point(12, 174);
-            this.guna2PictureBox5.Name = "guna2PictureBox5";
-            this.guna2PictureBox5.Size = new System.Drawing.Size(28, 32);
-            this.guna2PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.guna2PictureBox5.TabIndex = 31;
-            this.guna2PictureBox5.TabStop = false;
-            // 
-            // guna2PictureBox7
-            // 
-            this.guna2PictureBox7.BorderRadius = 22;
-            this.guna2PictureBox7.Image = global::QuanLyKhachSan.Properties.Resources.Bar;
-            this.guna2PictureBox7.ImageRotate = 0F;
-            this.guna2PictureBox7.Location = new System.Drawing.Point(16, 7);
-            this.guna2PictureBox7.Name = "guna2PictureBox7";
-            this.guna2PictureBox7.Size = new System.Drawing.Size(169, 165);
-            this.guna2PictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.guna2PictureBox7.TabIndex = 30;
-            this.guna2PictureBox7.TabStop = false;
-            // 
-            // guna2PictureBox6
-            // 
-            this.guna2PictureBox6.FillColor = System.Drawing.Color.RoyalBlue;
-            this.guna2PictureBox6.Image = global::QuanLyKhachSan.Properties.Resources.DichVu;
-            this.guna2PictureBox6.ImageRotate = 0F;
-            this.guna2PictureBox6.Location = new System.Drawing.Point(11, 17);
-            this.guna2PictureBox6.Name = "guna2PictureBox6";
-            this.guna2PictureBox6.Size = new System.Drawing.Size(123, 117);
-            this.guna2PictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.guna2PictureBox6.TabIndex = 23;
-            this.guna2PictureBox6.TabStop = false;
-            // 
-            // guna2ImageButton1
-            // 
-            this.guna2ImageButton1.BackgroundImage = global::QuanLyKhachSan.Properties.Resources.chat;
-            this.guna2ImageButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.guna2ImageButton1.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.guna2ImageButton1.HoverState.ImageSize = new System.Drawing.Size(64, 64);
-            this.guna2ImageButton1.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton1.Image")));
-            this.guna2ImageButton1.ImageOffset = new System.Drawing.Point(0, 0);
-            this.guna2ImageButton1.ImageRotate = 0F;
-            this.guna2ImageButton1.Location = new System.Drawing.Point(96, 184);
-            this.guna2ImageButton1.Name = "guna2ImageButton1";
-            this.guna2ImageButton1.PressedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.guna2ImageButton1.Size = new System.Drawing.Size(39, 38);
-            this.guna2ImageButton1.TabIndex = 38;
-            // 
-            // guna2PictureBox2
-            // 
-            this.guna2PictureBox2.Image = global::QuanLyKhachSan.Properties.Resources.icons8_star_96;
-            this.guna2PictureBox2.ImageRotate = 0F;
-            this.guna2PictureBox2.Location = new System.Drawing.Point(12, 174);
-            this.guna2PictureBox2.Name = "guna2PictureBox2";
-            this.guna2PictureBox2.Size = new System.Drawing.Size(28, 32);
-            this.guna2PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.guna2PictureBox2.TabIndex = 31;
-            this.guna2PictureBox2.TabStop = false;
-            // 
-            // guna2PictureBox1
-            // 
-            this.guna2PictureBox1.BorderRadius = 22;
-            this.guna2PictureBox1.Image = global::QuanLyKhachSan.Properties.Resources.thuc_anjpg;
-            this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(16, 9);
-            this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.Size = new System.Drawing.Size(169, 165);
-            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.guna2PictureBox1.TabIndex = 30;
-            this.guna2PictureBox1.TabStop = false;
-            // 
             // fDichVu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -999,29 +999,29 @@
             this.pnlContainer.ResumeLayout(false);
             this.pnlGiac.ResumeLayout(false);
             this.pnlGiac.PerformLayout();
-            this.pnlXongHoi.ResumeLayout(false);
-            this.pnlXongHoi.PerformLayout();
-            this.pnlHoBoi.ResumeLayout(false);
-            this.pnlHoBoi.PerformLayout();
-            this.pnlBar.ResumeLayout(false);
-            this.pnlBar.PerformLayout();
-            this.guna2Panel1.ResumeLayout(false);
-            this.guna2Panel1.PerformLayout();
-            this.pnlNhHang.ResumeLayout(false);
-            this.pnlNhHang.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox14)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox15)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox16)).EndInit();
+            this.pnlXongHoi.ResumeLayout(false);
+            this.pnlXongHoi.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox12)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox13)).EndInit();
+            this.pnlHoBoi.ResumeLayout(false);
+            this.pnlHoBoi.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox10)).EndInit();
+            this.pnlBar.ResumeLayout(false);
+            this.pnlBar.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox7)).EndInit();
+            this.guna2Panel1.ResumeLayout(false);
+            this.guna2Panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox6)).EndInit();
+            this.pnlNhHang.ResumeLayout(false);
+            this.pnlNhHang.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.ResumeLayout(false);

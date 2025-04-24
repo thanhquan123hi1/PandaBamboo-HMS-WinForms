@@ -48,6 +48,7 @@
             this.btnThanhToan = new Guna.UI2.WinForms.Guna2GradientButton();
             this.dgvHoaDon = new Guna.UI2.WinForms.Guna2DataGridView();
             this.MaHD = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.MaKH = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TenKH = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SDT = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.MaPH = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -203,7 +204,7 @@
             this.txtThue.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtThue.ForeColor = System.Drawing.Color.Black;
             this.txtThue.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtThue.Location = new System.Drawing.Point(82, 368);
+            this.txtThue.Location = new System.Drawing.Point(82, 391);
             this.txtThue.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtThue.Name = "txtThue";
             this.txtThue.PlaceholderForeColor = System.Drawing.Color.Gray;
@@ -228,7 +229,7 @@
             this.txtTongTien.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTongTien.ForeColor = System.Drawing.Color.Black;
             this.txtTongTien.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtTongTien.Location = new System.Drawing.Point(82, 288);
+            this.txtTongTien.Location = new System.Drawing.Point(82, 335);
             this.txtTongTien.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtTongTien.Name = "txtTongTien";
             this.txtTongTien.PlaceholderForeColor = System.Drawing.Color.Gray;
@@ -312,6 +313,7 @@
             this.dgvHoaDon.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.dgvHoaDon.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.MaHD,
+            this.MaKH,
             this.TenKH,
             this.SDT,
             this.MaPH,
@@ -342,7 +344,7 @@
             this.dgvHoaDon.RowHeadersWidth = 51;
             this.dgvHoaDon.RowTemplate.DividerHeight = 5;
             this.dgvHoaDon.RowTemplate.Height = 40;
-            this.dgvHoaDon.Size = new System.Drawing.Size(1111, 275);
+            this.dgvHoaDon.Size = new System.Drawing.Size(1111, 322);
             this.dgvHoaDon.TabIndex = 7;
             this.dgvHoaDon.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.dgvHoaDon.ThemeStyle.AlternatingRowsStyle.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -374,6 +376,13 @@
             this.MaHD.MinimumWidth = 6;
             this.MaHD.Name = "MaHD";
             this.MaHD.ReadOnly = true;
+            // 
+            // MaKH
+            // 
+            this.MaKH.HeaderText = "MaKH";
+            this.MaKH.MinimumWidth = 6;
+            this.MaKH.Name = "MaKH";
+            this.MaKH.ReadOnly = true;
             // 
             // TenKH
             // 
@@ -464,6 +473,7 @@
         private Guna.UI2.WinForms.Guna2Panel guna2Panel4;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
         private System.Windows.Forms.DataGridViewTextBoxColumn MaHD;
+        private System.Windows.Forms.DataGridViewTextBoxColumn MaKH;
         private System.Windows.Forms.DataGridViewTextBoxColumn TenKH;
         private System.Windows.Forms.DataGridViewTextBoxColumn SDT;
         private System.Windows.Forms.DataGridViewTextBoxColumn MaPH;

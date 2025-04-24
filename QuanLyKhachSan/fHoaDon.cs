@@ -59,32 +59,34 @@ namespace QuanLyKhachSan
                         int maPH = Convert.ToInt32(row.Cells["MaPH"].Value);
 
 
-                        // Gọi hàm thanh toán hóa đơn
-                        bool result = dbHoaDon.ThanhToanHoaDon(maKH, maHD, hinhThucTT, ngayTT, maPH);
-                        if (!result)
-                        {
-                            MessageBox.Show($"Lỗi khi thanh toán hóa đơn: {error}", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                        }
-                        if (result)
-                        {
-                            soHoaDonThanhToan++;
-                        }
+
+
+                        //// Gọi hàm thanh toán hóa đơn
+                        //bool result = dbHoaDon.ThanhToanHoaDon(maKH, maHD, hinhThucTT, ngayTT, maPH);
+                        //if (!result)
+                        //{
+                        //    MessageBox.Show($"Lỗi khi thanh toán hóa đơn: {error}", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        //}
+                        //if (result)
+                        //{
+                        //    soHoaDonThanhToan++;
+                        //}
                     }
                 }
 
-                if (soHoaDonThanhToan > 0)
-                {
-                    MessageBox.Show($"Đã thanh toán hóa đơn!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    LoadHoaDon();
-                }
-                else
-                {
-                    MessageBox.Show($"Không có hóa đơn nào cần thanh toán hoặc bạn nhập thiếu mã nhân viên ! {dgvHoaDon.Rows.Count}", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                }
+                //if (soHoaDonThanhToan > 0)
+                //{
+                //    MessageBox.Show($"Đã thanh toán hóa đơn!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                //    LoadHoaDon();
+                //}
+                //else
+                //{
+                //    MessageBox.Show($"Không có hóa đơn nào cần thanh toán hoặc bạn nhập thiếu mã nhân viên ! {dgvHoaDon.Rows.Count}", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                //}
             }
             else
             {
-                MessageBox.Show("Hãy tìm khách hàng cần thanh toán trước khi thanh toán!", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Danh sách hóa đơn trống!", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
     }

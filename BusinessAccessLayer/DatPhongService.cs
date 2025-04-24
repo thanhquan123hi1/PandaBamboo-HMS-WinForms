@@ -13,58 +13,64 @@ namespace BusinessAccessLayer
         private HotelContext _context = new HotelContext();
         // Thêm khách hàng đặt phòng
         public bool InsertKhachHangDatPhong(ref string err, string tenKH, string quocTich, string cccdVisa, string sdt,
-                                 int maPH, string hinhThucDP, DateTime ngNhanPH, DateTime ngTraPH)
+                                            int maPH, string hinhThucDP, DateTime ngNhanPH, DateTime ngTraPH)
         {
             try
             {
-                // Kiểm tra khách hàng đã tồn tại dựa vào CCCD_VISA và SDT
+                int maKH;
+                // Tìm khách hàng theo CCCD hoặc SDT
                 var khachHang = _context.KhachHangs
                     .FirstOrDefault(kh => kh.CCCD_VISA == cccdVisa || kh.SDT == sdt);
-                // Nếu khách hàng đã tồn tại thì không cần thêm mới
-                if (khachHang != null)
-                {
-                    // Khách hàng đã tồn tại, không cho đặt phòng
-                    return false;
-                }
-                // Nếu chưa tồn tại thì thêm mới
-                khachHang = new KhachHang
-                {
-                    TenKH = tenKH,
-                    QuocTich = quocTich,
-                    CCCD_VISA = cccdVisa,
-                    SDT = sdt
-                };
-                _context.KhachHangs.Add(khachHang);
-                DatPhong(maPH);
-                _context.SaveChanges(); // Để lấy MaKH sau khi thêm
 
-                // Lấy thông tin phòng
+                // Nếu chưa tồn tại, thêm mới
+                if (khachHang == null)
+                {
+                    khachHang = new KhachHang
+                    {
+                        TenKH = tenKH,
+                        QuocTich = quocTich,
+                        CCCD_VISA = cccdVisa,
+                        SDT = sdt
+                    };
+                    _context.KhachHangs.Add(khachHang);
+                    _context.SaveChanges(); // Để lấy MaKH sau khi insert
+                }
+
+                maKH = khachHang.MaKH;
+
+                // Lấy giá phòng
                 var phong = _context.Phongs.FirstOrDefault(p => p.MaPH == maPH);
                 if (phong == null)
+                {
+                    err = "Không tìm thấy phòng.";
                     return false;
+                }
 
-                // Tính số ngày và tổng tiền
+                // Tính tổng tiền
                 int soNgay = (ngTraPH - ngNhanPH).Days;
                 if (soNgay <= 0)
+                {
+                    err = "Ngày nhận phòng không hợp lệ.";
                     return false;
+                }
 
                 decimal tongTien = soNgay * phong.GiaPH;
 
-                // Tạo đặt phòng
+                // Thêm đặt phòng
                 var datPhong = new DatPhong
                 {
                     MaPH = maPH,
-                    MaKH = khachHang.MaKH,
+                    MaKH = maKH,
                     HinhThucDP = hinhThucDP,
                     NgNhanPH = ngNhanPH,
                     NgTraPH = ngTraPH
                 };
                 _context.DatPhongs.Add(datPhong);
 
-                // Tạo hóa đơn
+                // Thêm hóa đơn
                 var hoaDon = new HoaDon
                 {
-                    MaKH = khachHang.MaKH,
+                    MaKH = maKH,
                     TenHD = "Hóa đơn đặt phòng",
                     TinhTrangTT = "Chua Thanh Toan",
                     HinhThucTT = "ChuaTT",
@@ -73,7 +79,8 @@ namespace BusinessAccessLayer
                 };
                 _context.HoaDons.Add(hoaDon);
 
-                // Lưu tất cả thay đổi vào DB
+                DatPhongService dp = new DatPhongService();
+                dp.DatPhong(maPH); // Cập nhật trạng thái phòng thành "Đã Đặt"
                 _context.SaveChanges();
                 return true;
             }
@@ -83,6 +90,7 @@ namespace BusinessAccessLayer
                 return false;
             }
         }
+
         // Cập nhật trạng thái phòng khi có khách đặt phòng
         public void DatPhong(int datPhong)
         {
@@ -94,17 +102,7 @@ namespace BusinessAccessLayer
 
             _context.SaveChanges();
         }
-        // Cập nhật trạng thái phòng khi có khách trả phòng
-        public void TraPhong(int traPhong)
-        {
-            var phong = _context.Phongs.FirstOrDefault(p => p.MaPH == traPhong);
-            if (phong != null)
-            {
-                phong.TinhTrangPH = "Dọn Dẹp";
-            }
 
-            _context.SaveChanges();
-        }
         // Cập nhật trạng thái phòng khi đã dọn dẹp xog
         public void PhongTrong(int maPhong)
         {

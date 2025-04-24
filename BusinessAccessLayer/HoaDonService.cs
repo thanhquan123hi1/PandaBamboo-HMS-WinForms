@@ -57,14 +57,11 @@ namespace BusinessAccessLayer
         public List<dynamic> dsHoaDon(string tuKhoa)
         {
             var danhSach = (from hd in _context.HoaDons
-                            join dp in _context.DatPhongs on hd.MaKH equals dp.MaKH
-                            where hd.MaHD.ToString().Contains(tuKhoa)
-                                  || hd.TenHD.Contains(tuKhoa)
-                                  || hd.KhachHang.TenKH.Contains(tuKhoa)
-                                  || hd.KhachHang.SDT.Contains(tuKhoa)
-                                  || hd.TongTien.ToString().Contains(tuKhoa)
-                                  || hd.TinhTrangTT.Contains(tuKhoa)
-                                  || (dp.MaPH.ToString().Contains(tuKhoa))
+                            where hd.TinhTrangTT == "Chua Thanh Toan"
+                                  && (hd.MaHD.ToString().Contains(tuKhoa)
+                                      || hd.KhachHang.TenKH.Contains(tuKhoa)
+                                      || hd.KhachHang.SDT.Contains(tuKhoa)
+                                      || hd.KhachHang.DatPhongs.Any(dp => dp.MaPH.ToString().Contains(tuKhoa)))
                             select new
                             {
                                 hd.MaHD,
@@ -74,8 +71,11 @@ namespace BusinessAccessLayer
                                 SDT = hd.KhachHang.SDT,
                                 hd.TongTien,
                                 hd.TinhTrangTT,
-                                MaPH = dp.MaPH.ToString()
-                            }).ToList<dynamic>();
+                                MaPH = hd.KhachHang.DatPhongs
+                                          .Where(dp => dp.NgTraPH >= DateTime.Now) // nếu muốn lọc đặt phòng còn hiệu lực
+                                          .Select(dp => dp.MaPH.ToString())
+                                          .FirstOrDefault() ?? ""
+                            }).Distinct().ToList<dynamic>();
 
             return danhSach;
         }
@@ -83,14 +83,11 @@ namespace BusinessAccessLayer
         public decimal tongTienHD(string tuKhoa)
         {
             var tongTien = (from hd in _context.HoaDons
-                            join dp in _context.DatPhongs on hd.MaKH equals dp.MaKH
-                            where hd.MaHD.ToString().Contains(tuKhoa)
-                                  || hd.TenHD.Contains(tuKhoa)
-                                  || hd.KhachHang.TenKH.Contains(tuKhoa)
-                                  || hd.KhachHang.SDT.Contains(tuKhoa)
-                                  || hd.TongTien.ToString().Contains(tuKhoa)
-                                  || hd.TinhTrangTT.Contains(tuKhoa)
-                                  || (dp.MaPH.ToString().Contains(tuKhoa))
+                            where hd.TinhTrangTT == "Chua Thanh Toan"
+                                  && (hd.MaHD.ToString().Contains(tuKhoa)
+                                      || hd.KhachHang.TenKH.Contains(tuKhoa)
+                                      || hd.KhachHang.SDT.Contains(tuKhoa)
+                                      || hd.KhachHang.DatPhongs.Any(dp => dp.MaPH.ToString().Contains(tuKhoa)))
                             select hd.TongTien).Sum() ?? 0; // Nếu null thì trả về 0
 
             return tongTien;
@@ -101,42 +98,47 @@ namespace BusinessAccessLayer
             var hoaDon = _context.HoaDons.FirstOrDefault(h => h.MaHD == maHD && h.TinhTrangTT == "Chua Thanh Toan");
             if (hoaDon == null)
             {
-                return false; // Không tìm thấy hóa đơn hoặc đã thanh toán
+                return false; // Không tìm thấy hóa đơn cần thanh toán
             }
 
-            // Cập nhật thông tin thanh toán
+            // Cập nhật thông tin hóa đơn
             hoaDon.NgayTT = ngayTT;
             hoaDon.HinhThucTT = hinhThucTT;
             hoaDon.TinhTrangTT = "Da Thanh Toan";
+            Console.WriteLine("Xong 1");
+            // Lấy tên hóa đơn để phân loại
+            string tenHD = hoaDon.TenHD;
 
-            // Nếu là hóa đơn dịch vụ
-            if (hoaDon.TenHD != "Hóa đơn đặt phòng")
+            if (tenHD != "Hóa đơn đặt phòng")
             {
-                var dichVus = _context.SuDungDichVus.Where(dv => dv.MaKH == maKH);
-                _context.SuDungDichVus.RemoveRange(dichVus);
+                // Nếu là hóa đơn dịch vụ -> xóa dịch vụ đã sử dụng
+                var dsSuDungDV = _context.SuDungDichVus.Where(dv => dv.MaKH == maKH).ToList();
+                if (dsSuDungDV.Any())
+                {
+                    _context.SuDungDichVus.RemoveRange(dsSuDungDV);
+                }
+                Console.WriteLine("Xong 2");
             }
-
-            // Nếu là hóa đơn đặt phòng
             else
             {
-                var datPhong = _context.DatPhongs.FirstOrDefault(dp => dp.MaPH == maPH);
-                if (datPhong != null)
+                // Nếu là hóa đơn đặt phòng -> xóa thông tin đặt phòng và cập nhật trạng thái phòng
+                var dsDatPhong = _context.DatPhongs.Where(dp => dp.MaKH == maKH && dp.MaPH == maPH).ToList();
+                foreach (var datPhong in dsDatPhong)
                 {
-                    DatPhongService traPhong = new DatPhongService();
-                    traPhong.TraPhong(maPH);
+                    var phong = _context.Phongs.FirstOrDefault(p => p.MaPH == datPhong.MaPH);
+                    if (phong != null)
+                    {
+                        phong.TinhTrangPH = "Dọn Dẹp";
+                    }
+
                     _context.DatPhongs.Remove(datPhong);
                 }
+                Console.WriteLine("Xong 3");
             }
 
-            // Xóa khách hàng đã thanh toán
-            var khachHang = _context.KhachHangs.FirstOrDefault(kh => kh.MaKH == maKH);
-                if (khachHang != null)
-                {
-                    _context.KhachHangs.Remove(khachHang);
-                }
-             
             _context.SaveChanges();
-            return true; // Thanh toán thành công
+            return true;
         }
+
     }
 }
