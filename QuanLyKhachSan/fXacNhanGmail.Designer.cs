@@ -98,6 +98,7 @@
             this.tBEmail.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(229)))), ((int)(((byte)(229)))));
             this.tBEmail.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.tBEmail.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.tBEmail.ForeColor = System.Drawing.Color.Black;
             this.tBEmail.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.tBEmail.IconLeft = global::QuanLyKhachSan.Properties.Resources.icons8_gmail_48;
             this.tBEmail.Location = new System.Drawing.Point(54, 205);

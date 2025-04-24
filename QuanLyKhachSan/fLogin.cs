@@ -44,5 +44,15 @@ namespace QuanLyKhachSan
             form2.Show();  // Mở Form2
             this.Hide();  // Ẩn Form1
         }
+
+        private void tBMKDN_KeyDown(object sender, KeyEventArgs e)
+        {
+
+            if (e.KeyCode == Keys.Enter)
+            {
+                btnLogin_Click(sender, e);
+                e.SuppressKeyPress = true; // Ngăn chặn âm thanh "ding" khi nhấn Enter
+            }
+        }
     }
 }

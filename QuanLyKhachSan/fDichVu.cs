@@ -147,5 +147,14 @@ namespace QuanLyKhachSan
         {
             ChonDichVu("Giặt");
         }
+
+        private void txtSLDV_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                btnSuDungDV_Click(sender, e);
+                e.SuppressKeyPress = true; // Ngăn chặn âm thanh "ding" khi nhấn Enter
+            }
+        }
     }
 }

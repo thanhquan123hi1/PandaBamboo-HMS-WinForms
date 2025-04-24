@@ -251,6 +251,7 @@
             this.txtSDT.SelectedText = "";
             this.txtSDT.Size = new System.Drawing.Size(393, 61);
             this.txtSDT.TabIndex = 4;
+            this.txtSDT.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtSDT_KeyDown);
             // 
             // txtCCCD
             // 

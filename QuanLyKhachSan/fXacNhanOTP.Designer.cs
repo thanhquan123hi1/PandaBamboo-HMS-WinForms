@@ -114,6 +114,7 @@
             this.tBOTP.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(229)))), ((int)(((byte)(229)))));
             this.tBOTP.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.tBOTP.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.tBOTP.ForeColor = System.Drawing.Color.Black;
             this.tBOTP.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.tBOTP.IconLeft = global::QuanLyKhachSan.Properties.Resources.icons8_otp_64;
             this.tBOTP.Location = new System.Drawing.Point(54, 205);

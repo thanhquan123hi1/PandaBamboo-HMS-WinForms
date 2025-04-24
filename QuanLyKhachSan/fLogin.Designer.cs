@@ -160,6 +160,7 @@
             this.tBMKDN.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(229)))), ((int)(((byte)(229)))));
             this.tBMKDN.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.tBMKDN.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.tBMKDN.ForeColor = System.Drawing.Color.Black;
             this.tBMKDN.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.tBMKDN.IconLeft = global::QuanLyKhachSan.Properties.Resources.Key_password;
             this.tBMKDN.Location = new System.Drawing.Point(61, 279);
@@ -171,6 +172,7 @@
             this.tBMKDN.SelectedText = "";
             this.tBMKDN.Size = new System.Drawing.Size(316, 72);
             this.tBMKDN.TabIndex = 1;
+            this.tBMKDN.KeyDown += new System.Windows.Forms.KeyEventHandler(this.tBMKDN_KeyDown);
             // 
             // tBTenDN
             // 
@@ -184,6 +186,7 @@
             this.tBTenDN.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(229)))), ((int)(((byte)(229)))));
             this.tBTenDN.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.tBTenDN.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.tBTenDN.ForeColor = System.Drawing.Color.Black;
             this.tBTenDN.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.tBTenDN.IconLeft = global::QuanLyKhachSan.Properties.Resources.Key_User;
             this.tBTenDN.Location = new System.Drawing.Point(61, 180);

@@ -203,7 +203,7 @@
             this.txtThue.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtThue.ForeColor = System.Drawing.Color.Black;
             this.txtThue.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtThue.Location = new System.Drawing.Point(82, 368);
+            this.txtThue.Location = new System.Drawing.Point(82, 391);
             this.txtThue.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtThue.Name = "txtThue";
             this.txtThue.PlaceholderForeColor = System.Drawing.Color.Gray;
@@ -228,7 +228,7 @@
             this.txtTongTien.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTongTien.ForeColor = System.Drawing.Color.Black;
             this.txtTongTien.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtTongTien.Location = new System.Drawing.Point(82, 288);
+            this.txtTongTien.Location = new System.Drawing.Point(82, 335);
             this.txtTongTien.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtTongTien.Name = "txtTongTien";
             this.txtTongTien.PlaceholderForeColor = System.Drawing.Color.Gray;
@@ -342,7 +342,7 @@
             this.dgvHoaDon.RowHeadersWidth = 51;
             this.dgvHoaDon.RowTemplate.DividerHeight = 5;
             this.dgvHoaDon.RowTemplate.Height = 40;
-            this.dgvHoaDon.Size = new System.Drawing.Size(1111, 275);
+            this.dgvHoaDon.Size = new System.Drawing.Size(1111, 313);
             this.dgvHoaDon.TabIndex = 7;
             this.dgvHoaDon.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.dgvHoaDon.ThemeStyle.AlternatingRowsStyle.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));

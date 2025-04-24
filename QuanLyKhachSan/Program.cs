@@ -19,7 +19,7 @@ namespace QuanLyKhachSan
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new fTableManage());
+            Application.Run(new fLogin());
         }
     }
 }

@@ -67,5 +67,14 @@ namespace QuanLyKhachSan
                 MessageBox.Show("Lỗi: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        private void txtSDT_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                btnDatPhong_Click(sender, e); // Gọi sự kiện nhấn nút Đặt Phòng
+                e.SuppressKeyPress = true; // Ngăn chặn âm thanh "ding" khi nhấn Enter
+            }
+        }
     }
 }

@@ -1,0 +1,77 @@
+﻿USE QuanLyKhachSanWin
+GO
+-- Insert Users
+Insert Into Users(Username, Email, PasswordHash) values 
+('minhduc', '23110094@student.hcmute.edu.vn', '123'),
+('ducthinh', 'thinh447720056@gmail.com', '123'),
+('thanhquan', '23110145@student.hcmute.edu.vn', '123'),
+('nhatanh', '23110074@student.hcmute.edu.vn', '123'),
+('hoangdat', '23110090@student.hcmute.edu.vn', '123');
+
+-- Insert Dịch Vụ
+INSERT INTO DichVus (TenDV, GiaDV) VALUES 
+(N'Nhà hàng ban sáng', 157500),
+(N'Nhà hàng ban trưa', 420000),
+(N'Nhà hàng ban đêm', 1050000),
+(N'Bể bơi', 210000),
+(N'Xông hơi', 367500),
+(N'Bar (ban đêm)', 1048950),
+(N'Giặt, Sấy', 40000);
+-- Insert thông tin phòng
+INSERT INTO Phongs (MaPH, LoaiPH, TinhTrangPH, GiaPH)  
+VALUES  
+    (101, N'PhongDon', N'Trống', 500000),  
+	(102, N'PhongDon', N'Trống', 500000),  
+	(103, N'PhongDon', N'Trống', 500000),  
+	(104, N'PhongDon', N'Trống', 500000),  
+	(105, N'PhongDon', N'Trống', 500000),  
+    (106, N'PhongDoi', N'Trống', 750000), 
+	(107, N'PhongDoi', N'Trống', 750000),
+    (108, N'PhongDoi', N'Trống', 750000), 
+	(109, N'PhongDoi', N'Trống', 750000),
+	(201, N'PhongDon', N'Trống', 500000),  
+	(202, N'PhongDon', N'Trống', 500000),  
+	(203, N'PhongDon', N'Trống', 500000),  
+	(204, N'PhongDon', N'Trống', 500000),  
+	(205, N'PhongDon', N'Trống', 500000),  
+    (206, N'PhongDoi', N'Trống', 750000), 
+	(207, N'PhongDoi', N'Trống', 750000),
+    (208, N'PhongDoi', N'Trống', 750000), 
+	(209, N'PhongDoi', N'Trống', 750000),
+	(301, N'PhongDon', N'Trống', 500000),  
+	(302, N'PhongDon', N'Trống', 500000),  
+	(303, N'PhongDon', N'Trống', 500000),  
+	(304, N'PhongDon', N'Trống', 500000),  
+	(305, N'PhongDon', N'Trống', 500000),  
+    (306, N'PhongDoi', N'Trống', 750000), 
+	(307, N'PhongDoi', N'Trống', 750000),
+    (308, N'PhongDoi', N'Trống', 750000), 
+	(309, N'PhongDoi', N'Trống', 750000),
+	(401, N'PhongDon', N'Trống', 500000),  
+	(402, N'PhongDon', N'Trống', 500000),  
+	(403, N'PhongDon', N'Trống', 500000),  
+	(404, N'PhongDon', N'Trống', 500000),  
+	(405, N'PhongDon', N'Trống', 500000),  
+    (406, N'PhongDoi', N'Trống', 750000), 
+	(407, N'PhongDoi', N'Trống', 750000),
+    (408, N'PhongDoi', N'Trống', 750000), 
+	(409, N'PhongDoi', N'Trống', 750000),
+	(501, N'CC1', N'Trống', 1250000),  
+	(502, N'CC1', N'Trống', 1250000),  
+	(503, N'CC1', N'Trống', 1250000),  
+	(504, N'CC1', N'Trống', 1250000),  
+	(505, N'CC1', N'Trống', 1250000),  
+	(506, N'CC1', N'Trống', 1250000),    
+	(507, N'CC1', N'Trống', 1250000),  
+	(508, N'CC1', N'Trống', 1250000),  
+	(509, N'CC1', N'Trống', 1250000),  
+    (601, N'CC2', N'Trống', 1750000),
+	(602, N'CC2', N'Trống', 1750000),
+	(603, N'CC2', N'Trống', 1750000),
+	(604, N'CC2', N'Trống', 1750000),
+	(605, N'CC2', N'Trống', 1750000),
+	(606, N'CC2', N'Trống', 1750000),
+	(607, N'CC2', N'Trống', 1750000),
+	(608, N'CC2', N'Trống', 1750000),
+	(609, N'CC2', N'Trống', 1750000);
+GO

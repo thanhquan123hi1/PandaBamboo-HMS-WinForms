@@ -82,6 +82,7 @@
             this.tBMK2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(229)))), ((int)(((byte)(229)))));
             this.tBMK2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.tBMK2.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.tBMK2.ForeColor = System.Drawing.Color.Black;
             this.tBMK2.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.tBMK2.IconLeft = global::QuanLyKhachSan.Properties.Resources.Key_password;
             this.tBMK2.Location = new System.Drawing.Point(54, 285);
@@ -135,6 +136,7 @@
             this.tBMK1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(229)))), ((int)(((byte)(229)))));
             this.tBMK1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.tBMK1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.tBMK1.ForeColor = System.Drawing.Color.Black;
             this.tBMK1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.tBMK1.IconLeft = global::QuanLyKhachSan.Properties.Resources.Key_password;
             this.tBMK1.Location = new System.Drawing.Point(54, 205);

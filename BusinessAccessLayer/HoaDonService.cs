@@ -58,12 +58,9 @@ namespace BusinessAccessLayer
         {
             var danhSach = (from hd in _context.HoaDons
                             join dp in _context.DatPhongs on hd.MaKH equals dp.MaKH
-                            where hd.MaHD.ToString().Contains(tuKhoa)
-                                  || hd.TenHD.Contains(tuKhoa)
-                                  || hd.KhachHang.TenKH.Contains(tuKhoa)
+                            where hd.KhachHang.TenKH.Contains(tuKhoa)
                                   || hd.KhachHang.SDT.Contains(tuKhoa)
-                                  || hd.TongTien.ToString().Contains(tuKhoa)
-                                  || hd.TinhTrangTT.Contains(tuKhoa)
+                                  || hd.KhachHang.CCCD_VISA.Contains(tuKhoa)
                                   || (dp.MaPH.ToString().Contains(tuKhoa))
                             select new
                             {
@@ -84,12 +81,9 @@ namespace BusinessAccessLayer
         {
             var tongTien = (from hd in _context.HoaDons
                             join dp in _context.DatPhongs on hd.MaKH equals dp.MaKH
-                            where hd.MaHD.ToString().Contains(tuKhoa)
-                                  || hd.TenHD.Contains(tuKhoa)
-                                  || hd.KhachHang.TenKH.Contains(tuKhoa)
+                            where hd.KhachHang.TenKH.Contains(tuKhoa)
                                   || hd.KhachHang.SDT.Contains(tuKhoa)
-                                  || hd.TongTien.ToString().Contains(tuKhoa)
-                                  || hd.TinhTrangTT.Contains(tuKhoa)
+                                  || hd.KhachHang.CCCD_VISA.Contains(tuKhoa)
                                   || (dp.MaPH.ToString().Contains(tuKhoa))
                             select hd.TongTien).Sum() ?? 0; // Nếu null thì trả về 0
 
