@@ -1,6 +1,6 @@
 # Panda Bamboo (Hotel Management System)
 
-Dự án phần mềm quản lý khách sạn được xây dựng bằng C# WinForms, sử dụng kiến trúc N-Layer và Entity Framework để quản lý dữ liệu. Giao diện được thiết kế hiện đại với sự hỗ trợ của thư viện Guna UI.
+Dự án phần mềm quản lý khách sạn được xây dựng bằng C# WinForms, sử dụng kiến trúc Three-Layer và Entity Framework để quản lý dữ liệu. Giao diện được thiết kế hiện đại với sự hỗ trợ của thư viện Guna UI.
 
 ![.NET Framework](https://img.shields.io/badge/.NET%20Framework-4.7.2-purple)
 ![Language](https://img.shields.io/badge/Language-C%23-green)
