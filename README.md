@@ -1,7 +1,14 @@
-# Phần mềm Quản lý Khách sạn (Hotel Management System)
+# Panda Bamboo (Hotel Management System)
 
 Dự án phần mềm quản lý khách sạn được xây dựng bằng C# WinForms, sử dụng kiến trúc N-Layer và Entity Framework để quản lý dữ liệu. Giao diện được thiết kế hiện đại với sự hỗ trợ của thư viện Guna UI.
 
+![.NET Framework](https://img.shields.io/badge/.NET%20Framework-4.7.2-purple)
+![Language](https://img.shields.io/badge/Language-C%23-green)
+![App Type](https://img.shields.io/badge/App_Type-WinForms-blue)
+![Database](https://img.shields.io/badge/Database-SQL_Server-red)
+![ORM](https://img.shields.io/badge/ORM-Entity_Framework_6.4.4-lightblue)
+![UI Library](https://img.shields.io/badge/UI_Library-Guna.UI2-orange)
+![IDE](https://img.shields.io/badge/IDE-Visual_Studio-5C2D91)
 ## 🚀 Tính năng chính
 
 *   **Quản lý phòng (Room Management):**
