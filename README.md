@@ -82,3 +82,5 @@ Danh sách tài khoản mặc định (được tạo từ script SQL):
     *   `fCheckIn`: Form nhận phòng.
     *   `fHoaDon`: Form thanh toán.
     *   ...và các form chức năng khác.
+---
+*Dự án được thực hiện cho môn học Lập trình Window.*
