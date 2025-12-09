@@ -8,7 +8,6 @@ Dự án phần mềm quản lý khách sạn được xây dựng bằng C# Win
 ![Database](https://img.shields.io/badge/Database-SQL_Server-red)
 ![ORM](https://img.shields.io/badge/ORM-Entity_Framework_6.4.4-lightblue)
 ![UI Library](https://img.shields.io/badge/UI_Library-Guna.UI2-orange)
-![IDE](https://img.shields.io/badge/IDE-Visual_Studio-5C2D91)
 ## 🚀 Tính năng chính
 
 *   **Quản lý phòng (Room Management):**
